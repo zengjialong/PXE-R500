@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/id_llyout_about_dialog"
+	android:layout_width="360dp"
+	android:layout_height="300dp"
+	android:orientation="vertical">
+
+	<LinearLayout
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--
+
+             -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/my_image"
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:failureImageScaleType="centerInside"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:backgroundImage="@drawable/chs_music_null"
+			fresco:progressBarImage="@drawable/chs_music_null"
+			fresco:failureImage="@drawable/chs_music_null"
+			fresco:placeholderImage="@drawable/chs_music_null"
+            />
+        <Button
+            android:id="@+id/id_b_about_ok"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/dialog_exit"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            />
+	</LinearLayout>
+</LinearLayout>

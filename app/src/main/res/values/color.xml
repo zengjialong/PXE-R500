@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+    <!-- System -->
+    <color name="color_gold">#FF00ecfe</color>
+    <color name="color_dialog">#ff323131</color>
+    <color name="color_dialogText">#FFffffff</color>
+    <color name="color_dialogItemTextNormal">#FF787c80</color>
+    <color name="color_dialogItemTextPress">#2482CB</color>
+    <color name="color_dialogItemTextCancle">#FFffffff</color>
+    <color name="nullc">#00000000</color>
+    <color name="color_dialog_sel">#ff6abed6</color>
+    <color name="save_text_color">#FFf1f1f1</color>
+    <color name="main_color">#252E34</color>
+    <color name="system_button_press">#2482CB</color>
+    <color name="system_button_normal">#2482CB</color>
+    <color name="system_buttontext_disable">#FFa3a7aa</color>
+    <color name="Top_main_Bottom_color">#005c5c5c</color>
+    <color name="menu_text_color">#FFffffff</color>
+    <color name="line_default_color">#e5e5e5</color>
+    <color name="action_sheet_blue">#037BFF</color>
+
+
+    <color name="color_state">#383838</color>
+    <color name="color_state_line">#D7D7D7</color>
+    <color name="color_state_disagree">#898989</color>
+    <color name="color_state_agree">#007AFF</color>
+
+    <color name="hi_level2">#7F7F7F</color>
+    <color name="hi_level3">#0D9C76</color>
+    <color name="hi_level4">#8F1ED7</color>
+    <color name="hi_level5">#D052C3</color>
+    <color name="hi_level6">#DD6817</color>
+
+
+    <color name="system_button_text_press">#2482CB</color>
+    <color name="system_button_text_normal">#FFffffff</color>
+
+    <color name="bluetoothlistselect_color_normal">#00999999</color>
+    <color name="bluetoothlistselect_color_press">#FF4194F2</color>
+    <color name="bluetoothlistID_color_normal">#FF737373</color>
+    <color name="bluetoothlistID_color_press">#FFffffff</color>
+    <color name="bluetoothlistName_color_normal">#FF000000</color>
+    <color name="bluetoothlistName_color_press">#FFffffff</color>
+
+    <color name="btn_text_color_press">#FF000000</color>
+    <color name="btn_text_color_normal">#FFffffff</color>
+    <color name="btn_color_press">#2482CB</color>
+    <color name="btn_color_normal">#FF99a1b7</color>    
+    <color name="btn_stroke_color_press">#FF121212</color>
+    <color name="btn_stroke_color_normal">#FF121212</color> 
+    
+    <color name="btn_inputsource_color_press">#2482CB</color>
+    <color name="btn_inputsource_color_normal">#FFbdbdbd</color>
+
+    <color name="channelsel_text_color_press">#FF052446</color>
+    <color name="channelsel_text_color_normal">#FF99a1b7</color>
+    <color name="channelsel_btn_color_press">#2482CB</color>
+    <color name="channelsel_btn_color_normal">#0099a1b7</color>
+    <color name="channelsel_btn_stroke_color_press">#2482CB</color>
+    <color name="channelsel_btn_stroke_color_normal">#00ffffff</color>
+    <color name="channelsel_mid_color_normal">#FF44444F</color>
+
+    <color name="channelsel_v_color_press">#2482CB</color>
+    <color name="channelsel_v_color_normal">#006b6b6b</color>
+    <!-- Top Bar -->
+    <color name="color_Top_Bar_PageName">#FFffffff</color>
+    <color name="color_Top_Bar">#252E34</color>
+    <color name="color_Top_Bar_line">#FF625757</color>
+    <color name="text_color_connected">#FF2277D1</color>
+    <color name="text_color_disconnected">#FF999999</color>
+    <color name="text_color_TopBarChannelSel">#FFffffff</color>
+    
+    <color name="text_color_mac_config_item">#FF000000</color>
+    <color name="text_color_mac_config_item_content">#FF333333</color>
+    <!-- Bottom Bar -->
+    <color name="view_Bottom_Bar_sel_press">#FF458ce3</color>
+    <color name="view_Bottom_Bar_sel_normal">#00000000</color>
+    <color name="text_color_main_Bar">#FF252525</color>
+    <color name="Bottom_Bar_bg">#334251</color>
+    <color name="Bottom_Bar_mid">#00122137</color>
+    <color name="text_color_Bottom_Bar_normal">#FFFFFF</color>
+    <color name="text_color_Bottom_Bar_press">#219EFF</color>
+    <color name="text_color_mainvalume">#FF009dff</color>
+    <color name="text_view_color_mainvalume">#FFadaeaf</color>
+    <color name="background_tab_pressed">#FF161616</color>
+    
+    <!-- Main Home -->
+    <color name="user_group_set_text_color_press">#FF009dff</color>
+    <color name="user_group_set_text_color_normal">#FFfffffd</color>
+    <color name="user_group_set_btn_color_press">#FFfffffd</color>
+    <color name="user_group_set_btn_color_normal">#FFffffff</color>    
+    
+    <color name="user_group_text_color_press">#FFffffff</color>
+    <color name="user_group_text_color_normal">#FFffffff</color>
+    <color name="user_group_btn_color_press">#FF473344</color>
+    <color name="user_group_btn_color_normal">#FF2c3c4b</color>
+    <color name="user_group_btn_stroke_color_press">#FF009dff</color>
+    <color name="user_group_btn_stroke_color_normal">#00fffffe</color>
+    
+    <color name="text_color_user_group">#FFfffffd</color>
+    <color name="text_color_main_valume">#FFfffffd</color>
+    <color name="text_color_high_set">#FF334456</color>
+    <color name="text_color_back">#FFffffff</color>
+    <color name="mastervolume_seekbar_outside_color">#FF2565c3</color>
+    <color name="mastervolume_seekbar_inside_color">#FF88b6fb</color>
+    <color name="mastervolume_seekbar_progress_color">#458CE3</color>
+    <color name="mastervolume_seekbar_progress_bg_color">#FF6F849C</color>
+    <color name="mastervolume_seekbar_thumb_color">#458CE3</color> 
+    <color name="text_color_mainvalume_t">#FFcececd</color>
+    <color name="toning_home_mid_color">#FFeeece9</color>
+    <color name="home_mid_color">#FFe7e7e7</color>
+    <color name="mine_mid_color">#cccccccc</color>
+    <color name="mine_topbar_pagename_color">#FF333333</color>
+    <color name="mine_topbar_color">#FFffffff</color>
+    <color name="text_color_inputsource_press">#FF000000</color>
+    <color name="text_color_inputsource_normal">#FFffffff</color>
+
+    <color name="text_color_mastersub_val_press">#FFffffff</color>
+    <color name="text_color_mastersub_val_normal">#FFffffff</color>
+    
+    
+    <color name="hight_settings_text_color_press">#FFffffff</color>
+    <color name="hight_settings_text_color_normal">#FFffffff</color>
+    <color name="hight_settings_btn_color_press">#FF009dff</color>
+    <color name="hight_settings_btn_color_normal">#006b6b6b</color>
+    <color name="hight_settings_btn_stroke_color_press">#FF121212</color>
+    <color name="hight_settings_btn_stroke_color_normal">#FFfffffe</color>
+    
+    <color name="text_color_toninghome_3sub">#FF666666</color>
+
+    <color name="funstext_color">#FF8191ac</color>
+    <!-- 加密 -->
+    <color name="text_color_encryption_press">#FF000000</color>
+    <color name="text_color_encryption_normal">#FFffffff</color>
+    <!-- InputPage -->
+    <color name="inputpage_btn_color_normal">#FF374656</color>
+    <color name="inputpage_btn_color_press">#FFfffffd</color>
+    
+    <color name="inputpage_btn_ch_bg_color_normal">#FF374656</color>
+    <color name="inputpage_btn_ch_bg_color_press">#FFfffffd</color>
+    <color name="inputpage_btn_ch_text_color_normal">#FF374656</color>
+    <color name="inputpage_btn_ch_text_color_press">#FFffffff</color>
+    
+    
+    <color name="inputsourceitem_text_color_normal">#FFffffff</color>
+    <color name="inputsourceitem_text_color_press">#FFffffff</color>
+    <!-- Set Delay -->
+    <color name="delay_unit_text_color_normal">#2482CB</color>
+    <color name="delay_unit_text_color_press">#FF052446</color>
+    <color name="delay_seekbar_background_color">#FF81848b</color>
+    <color name="delay_seekbar_progress_color">#2482CB</color>
+    <color name="text_color_delay_unit">#FFffffff</color>
+    <color name="text_color_delay_valume">#FFffffff</color>
+    <color name="text_color_delay">#2482CB</color>
+    <color name="delay_seekbar_name_text_color">#FFf1f1f1</color>
+    <color name="delay_val_text_color_normal">#FF9f9f9f</color>
+    <color name="delay_val_text_color_press">#FFef5b24</color>
+    
+    <color name="text_color_save_press">#FF000000</color>
+    <color name="text_color_save_normal">#FFf1f1f1</color>
+    <color name="delay_channel_name_color">#FF393e42</color>
+    
+    <color name="text_color_delaychannelsel_press">#FF1eac4b</color>
+    <color name="text_color_delaychannelsel_normal">#FFf1f1f1</color>
+    <!-- XOver freq -->
+    <color name="text_color_xovernotset">#FFffffff</color>
+    <color name="text_color_xoverset">#FF052446</color>
+    <color name="xover_channel_text_color">#FFffffff</color>
+    <color name="xover_hlpass_text_color">#FFffffff</color>
+    <color name="xover_fcf_text_color">#FFffffff</color>
+   
+    <color name="xover_channel_text_color_normal">#FF161616</color>
+    <color name="xover_channel_text_color_press">#FF0289ff</color>
+
+    <color name="xover_text_color_press">#FFffffff</color>
+    <color name="xover_text_color_normal">#FF868891</color>
+    <color name="xover_btn_color_press">#FF3D92FB</color>
+    <color name="xover_btn_color_normal">#FF2E3139</color>
+    						<!-- Output -->
+    <color name="output_channel_setpress_text_color">#FF1ead4c</color>
+    <color name="output_channel_setnormal_text_color">#FF000000</color>
+    <color name="output_item_ch_name_color">#FFffffff</color>
+    <!-- 输出音量联调 --> 			
+    <color name="output_channel_connect_text_color">#FFccd3d8</color>
+    <!-- 输出音量 -->
+    <color name="output_channel_name_text_color">#FFffffff</color>
+    <color name="output_channel_valume_text_color">#2482CB</color>
+    <color name="output_channel_valume">#FF1eac4b</color>
+    <color name="output_mid_polar_mute_color">#FF252525</color>
+    <!-- 输出音量 -->
+    <color name="output_channel_Polar_P_text_color">#FFffffff</color>
+    <color name="output_channel_Polar_N_text_color">#FF052446</color>
+    <color name="output_channel_Polar_P_btn_color">#FFbdbdbd</color>
+    <color name="output_channel_Polar_N_btn_color">#2482CB</color>
+
+    <color name="output_channel_val_normal_text_color">#FFffffff</color>
+    <color name="output_channel_val_press_text_color">#2482CB</color>
+    <color name="output_channel_val_normal_btn_color">#FFbdbdbd</color>
+    <color name="output_channel_val_press_btn_color">#2482CB</color>
+
+    <color name="output_Link_disable_text_color">#FFbbbbbb</color>
+    <color name="output_Link_normal_text_color">#FFffffff</color>
+    <color name="output_Link_press_text_color">#2482CB</color>
+    <color name="output_Link_normal_btn_color">#FFbdbdbd</color>
+    <color name="output_Link_press_btn_color">#2482CB</color>
+
+    <color name="outputCH_normal_text_color">#FF6474a1</color>
+    <color name="outputCH_press_text_color">#FFffffff</color>
+    <color name="outputCH_normal_view_color">#FF3d518b</color>
+    <color name="outputCH_press_view_color">#FF468fe8</color>
+    <!-- 桥接 --> 
+    <color name="output_btl_set_text_color_normal">#FFffffff</color>
+    <color name="output_btl_set_text_color_press">#FFffffff</color>
+    <!-- 左右联调颜色 --> 
+    <color name="licklf_a">#FFff1f1f</color>
+    <color name="licklf_b">#FF2841ff</color>
+    <color name="licklf_c">#FFf07a1a</color>
+    <color name="licklf_d">#FFc81fff</color>
+    <!-- 任意联调弹出框 --> 
+    <color name="output_linkchsel_color">#FFf1f1f1</color>
+    <color name="output_linkchopt_color">#FFd4dbe0</color>
+    <color name="output_linkc_color">#FF252525</color>
+    <color name="text_color_autolink_press">#FFfffffd</color>
+    <color name="text_color_autolink_normal">#FFffffff</color>
+    
+    <color name="lickc_a">#FFccd21b</color>
+    <color name="lickc_b">#FF72a2c2</color>
+    <color name="lickc_c">#FF8f7360</color>
+    <color name="lickc_d">#FF4164ff</color>
+    
+    <color name="lickc_e">#FFf52e38</color>
+    <color name="lickc_f">#FFdf1fc1</color>
+    <color name="lickc_g">#FF7960fa</color>
+    <color name="lickc_h">#FFf0882c</color>
+    
+    <color name="lickc_i">#FF7a2613</color>
+    <color name="lickc_j">#FF2bda40</color>
+    <color name="lickc_k">#FF3bd0e2</color>
+    <color name="lickc_l">#FF60950c</color>
+    
+    <color name="lickc_sel">#FFfffffd</color>
+    
+    						<!-- Output va-->
+    <color name="output_va_b_text_color_normal">#FFececec</color>
+    <color name="output_va_b_text_color_press">#FF1eac4b</color>
+    <color name="output_va_b_text_color_msg">#FF636363</color>
+    <color name="outputpage_select_color_normal">#FF1eac4b</color>
+    <color name="outputpage_select_color_press">#FFffffff</color>
+    <color name="text_color_output_name">#FF000000</color>
+    <color name="text_color_output_name_lock">#FF333333</color>
+
+    <color name="output_channel_set_text_color_normal">#FF000000</color>
+    <color name="output_channel_set_text_color_press">#FFffffff</color>
+
+    <color name="output_va_bg_color">#3Fffffff</color>
+    <color name="output_va_midline_color">#FF6c7a98</color>
+
+    <!-- EQ --> 	
+    <color name="color_equalizer_enter">#FFffffff</color>
+    <color name="eq_seekbar_progress_bg_color">#FFfec802</color>
+    <color name="eq_seekbar_bg_color">#FFffffff</color>
+
+
+    <!-- weight --> 	
+    <color name="weight_b_text_color">#FFf1f1f1</color>
+    <color name="weight_inch_text_color">#2482CB</color>
+    <color name="weight_text_color_inval">#2482CB</color>
+    <color name="weight_text_color_polar_p">#2482CB</color>
+    <color name="weight_ch_name_text_color">#FF334456</color>
+    <color name="weight_b_channelname_color_normal">#FFf1f1f1</color>
+    <color name="weight_b_channelname_color_press">#FF1eac4b</color>
+    <color name="weight_b_Polar_P_text_color">#FF333333</color>
+    <color name="weight_b_Polar_N_text_color">#2482CB</color>
+	<!-- About Dialog --> 
+    <color name="text_color_about">#FFffffff</color>
+
+
+    <!-- About Dialog -->
+    <color name="dialog_solid_color">#FF052446</color>
+    <color name="dialog_stroke_color">#FFffffff</color>
+    <color name="dialog_midline_color">#FF374350</color>
+    <color name="dialog_texttitle_color">#FFffffff</color>
+    <color name="dialog_textcontext_color">#FF787c80</color>
+    <color name="dialog_textnormalother_color">#FF807F80</color>
+
+    <color name="dialog_btn_stroke_normal_color">#FFbdbdbd</color>
+    <color name="dialog_btn_stroke_press_color">#2482CB</color>
+    <color name="dialog_btn_text_normal_color">#FFfffffd</color>
+    <color name="dialog_btn_text_press_color">#FF0090ff</color>
+    <color name="dialog_text_normal_color">#FFfffffd</color>
+    <color name="dialog_text_press_color">#FF0090ff</color>
+    	                      <!-- 均衡器    -->
+    <color name="text_color_equalizer">#FF42518B</color>
+    <color name="equalizer_set">#FFFFFF</color>	     
+    <color name="equalizer_set_color">#FFfce802</color>                 
+    <color name="equalizer_lside_color">#FF9ca0a4</color>  
+	<!--   EQ_SeekBar  -->                       
+    <color name="equalizer_eq_progress_background_color">#FF7d899d</color>
+    <color name="equalizer_eq_progress_color">#2482CB</color>
+    <color name="equalizer_item_sel">#FF1eac4b</color>
+    <!--   Q Num     -->                       
+    <color name="equalizer_eq_num">#FFf1f1f1</color>
+	<!--   增益     -->                       
+    <color name="equalizer_gain_color">#FF252525</color>
+    <!--   Q值     -->                       
+    <color name="equalizer_q_color">#FF252525</color>
+    <!--   频率  -->                       
+    <color name="equalizer_freq_color">#FF252525</color>
+    <!--   ID  -->                       
+    <color name="equalizer_id_color">#FF252525</color>
+    <color name="equalizer_settop_color">#FF1eac4b</color>  
+    <color name="equalizer_settop_coloritem">#FF252525</color>  
+    <color name="equalizer_setmode0_color">#FFfce802</color>   	 	
+    <color name="equalizer_setmode1_color">#FF252525</color>     	 	
+    <color name="equalizer_eqlefttab_text">#FF99a1b7</color>
+    <!--  -->
+	<color name="white">#FFFFFFFF</color>
+	<color name="yellow">#FFFF00</color>
+	<color name="blue">#00F</color>
+	<color name="black">#000000</color>
+	<color name="calendar_day">#FF3C3C3C</color>
+	<color name="calenar_month">#1370C2</color>
+	<color name="rank_score">#2482CB</color>
+	<color name="history_date">#2482CB</color>
+	<color name="scene_burn">#8ED54E</color>
+	<color name="share_address">#8ED54E</color>
+	<color name="grey">#777B7C</color>
+    <color name="oct_select_num">#FFFFFFFF</color>
+    <color name="grey_light">#637981</color>
+    <color name="dark">#606D72</color>
+    <color name="system_settings">#7DA7B7</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="green_light">#5A767F</color>
+    <color name="spk_bg_btntext_normal">#FF000000</color>
+    <color name="spk_bg_btntext_press">#FFffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="delay_select_bg">#22292F</color>
+    <color name="text_color_white">#FFFFFFFF</color>
+    <color name="text_color_black">#FF000000</color>
+    <color name="text_color_black_1">#FF222222</color>
+    <color name="text_color_black_2">#90232422</color>
+    <color name="text_color_black_3">#FF696969</color>
+    <color name="text_color_black_4">#FFE6E6E6</color>
+    <color name="text_color_black_5">#B0232422</color>
+    <color name="text_color_grey">#60FFFFFF</color>
+    <color name="text_color_yellow">#FFFFFF00</color>
+    <color name="text_color_red">#FFFF0000</color>
+    <color name="text_color_blue">#FF33b5e5</color>
+    <color name="text_color_blue2">#8033b5e5</color>
+    <color name="text_color_tip">#FFa1a2aa</color>
+    <color name="text_color_green">#FF83b907</color>
+    <color name="unfocused2">#FFf5f4f3</color>
+    <color name="unfocused">#FFFFFFFF</color>
+    <color name="selected">#ffe9f0f9</color>
+    <color name="grey_login">#ff4d4d4d</color>
+    <color name="white_light_login">#ffb4b4b4</color>
+    <color name="vip_level">#e9c37a</color>
+    <color name="vip_username">#61b9ff</color>
+    <color name="movie_item_grey">#caced3</color>
+    <color name="text_color_blue1">#0f5f90</color>
+    <color name="text_color_yellow1">#d56d4b</color>
+    <color name="color_main">#00d1db</color>
+    <color name="color_grey">#909090</color>
+    <color name="color_main_light">#9ffcfe</color>
+    <!-- 灰色 -->
+    <color name="text_color_huise">#424241</color>
+    <color name="text_color_baise">#fcfcfc</color>
+
+
+    <!-- 输出音量调节的seekbar -->
+    <color name="mcl_seekbar_progress_color">#2482CB</color>
+    <color name="mcl_seekbar_pbg_color">#FF373737</color>
+
+
+
+    <!-- EQ Page --> 
+    <color name="eq_page_b_eq_set_color_press">#2482CB</color>
+    <color name="eq_page_b_eq_set_color_normal">#FFbdbdbd</color>
+    <color name="eq_page_text_eq_set_press">#2482CB</color>
+    <color name="eq_page_text_eq_set_normal">#FFffffff</color>
+    
+    <color name="eq_page_item_color_press">#2482CB</color>
+    <color name="eq_page_item_color_normal">#FFffffff</color>
+    <color name="eq_page_item_color_lock">#FF646464</color>
+    
+    <color name="eq_page_eqnum_color">#FF334456</color>
+    <color name="eq_page_gain_color">#FF334456</color>          
+    <color name="eq_page_q_color">#FF334456</color>               
+    <color name="eq_page_freq_color">#FF334456</color>
+    <color name="eq_page_val_item">#FF334456</color>
+    <color name="eq_page_val_color">#FF1eac4b</color>
+    <color name="eq_page_val_progress_color">#FF1eac4b</color>
+    <color name="eq_page_val_bg_color">#FF1e1e21</color>
+    
+    <color name="eq_page_eqg_bg_color">#FF58657d</color>
+    <color name="eq_page_eqg_inside_color">#FF58657d</color>
+    <color name="eq_page_eqg_midline_color">#FF889297</color>
+    <color name="eq_page_eqg_frame_color">#FF808cae</color>
+    <color name="eq_page_eqg_EQLine_color">#2482CB</color>
+    <color name="eq_page_eqg_frame_text_color">#FF8395b5</color>
+    
+  
+    <!-- =================NET=================  -->
+    <color name="tongingbar_color_normal">#FFb4b4b7</color>
+    <color name="tongingbar_color_null">#00333333</color>
+    <color name="tongingbar_color_press">#FFffffff</color>
+    <!-- =================NET=================  -->
+    <color name="color_net_bg">#FFf7f8f9</color>
+    <color name="text_color_main_net">#FF2c2d2d</color>
+    
+    <!-- ==================chs_net_register================  -->
+    <color name="color_netregister_text">#FFb1bac2</color>
+    
+    <color name="color_netregister_b_press">#FF626262</color>
+    <color name="color_netregister_b_normal">#FFffffff</color>
+    <!-- ==================net_loading================  -->
+    <color name="color_netloading_text">#FF599ef5</color>
+    <color name="color_netloading_fill_text">#FF9ca5ae</color>
+    
+    <color name="color_netlogin_b_press">#FFffffff</color>
+    <color name="color_netlogin_b_normal">#FFe94b05</color>
+    <!-- ==================chs_net_down================  -->
+    <color name="color_netdownsearchc_text">#FF2c2d2d</color>
+    
+    <color name="color_netdowneff_name">#FF2c2d2d</color>
+    <color name="color_netdowneff_info">#FF868686</color>
+    <color name="dowloadtitle_color_normal">#FF787c80</color>
+    <color name="dowloadtitle_color_press">#2482CB</color>
+    
+    <color name="dowloadtitle_vcolor_normal">#00595757</color>
+    <color name="dowloadtitle_vcolor_press">#2482CB</color>
+    <color name="dowloaditem_color_normal">#FFffffff</color>
+    <color name="dowload_bg_color">#273139</color>
+    <!-- ==================FileManger================  -->
+    <color name="red">#ffff0000</color>
+    <color name="dark_red">#ff8c1c1c</color>
+    <color name="light_gray">#ffececec</color>
+    <color name="light_yellow">#fffff99e</color>
+    <color name="dark_gray">#ff999999</color>
+    <color name="green">#ff95c81c</color>
+    <color name="orange">#2482CB</color>
+    <color name="silver">#ffecebe8</color>
+    <color name="gray">#ff7f7f7f</color>
+    <color name="skyblue">#87CEEB</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+    <color name="background_color">#eeeeee</color>
+    <color name="list_item_divider">#cccccc</color>
+    <color name="divider">#9c9c9c</color>
+    <color name="text_color">#000000</color>
+    <color name="text_color_pressed">#ffffff</color>
+    <color name="text_title_color">#444444</color>
+    <color name="menu_background">#d3d7d4</color>
+    
+    
+     <!-- NET -->
+    <color name="toning_home_knobview_point_color">#FFff0000</color>
+    <color name="toning_home_knobview_press_color">#FF06acee</color>
+    <color name="toning_home_knobview_pressL1_color">#FFff0000</color>
+    <color name="toning_home_knobview_normal_color">#FFb4b0b0</color>
+    
+    <color name="toning_sfield_setbtn_press_color">#FFfffffd</color>
+    <color name="toning_sfield_setbtn_normal_color">#FFffffff</color>
+    <color name="toning_sfield_settext_press_color">#FFffffff</color>
+    <color name="toning_sfield_settext_normal_color">#FFffffff</color>
+    <color name="toning_sfield_set_press_color">#FFffffff</color>
+    <color name="toning_sfield_set_normal_color">#FFffffff</color>
+    
+    <color name="toning_subwoofer_press_color">#2482CB</color>
+    <color name="toning_subwoofer_normal_color">#FFffffff</color>
+    <!-- ZXing -->
+    <color name="contents_text">#ff000000</color>
+	<color name="encode_view">#ffffffff</color>
+	<color name="help_button_view">#ffcccccc</color>
+	<color name="help_view">#ff404040</color>
+	<color name="possible_result_points">#c0ffff00</color>  
+	<color name="result_image_border">#ffffffff</color>
+	<color name="result_minor_text">#ffc0c0c0</color>
+	<color name="result_points">#c000ff00</color>
+	<color name="result_text">#ffffffff</color>
+	<color name="result_view">#b0000000</color>
+	<color name="sbc_header_text">#ff808080</color>
+	<color name="sbc_header_view">#ffffffff</color>
+	<color name="sbc_list_item">#fffff0e0</color>
+	<color name="sbc_layout_view">#ffffffff</color>
+	<color name="sbc_page_number_text">#ff000000</color>
+	<color name="sbc_snippet_text">#ff4b4b4b</color>
+	<color name="share_text">#ff000000</color>
+	<color name="share_view">#ffffffff</color>
+	<color name="status_view">#50000000</color>
+	<color name="status_text">#ffffffff</color>
+	 
+	<color name="viewfinder_frame">#ff000000</color>
+	<color name="viewfinder_laser">#ff86f60e</color>
+	<color name="viewfinder_laser_trs">#7f86f60e</color>
+	<color name="viewfinder_mask">#60000000</color>
+
+
+
+    <color name="ssm_b_optsc_press_color">#FFffffff</color>
+    <color name="ssm_b_optsc_normal_color">#FF222222</color>
+
+
+    <color name="sliderswitch_press_color">#FF3e8fff</color>
+    <color name="sliderswitch_normal_color">#FF2a2d33</color>
+
+
+    <color name="seekbarindexvalitem_index_color">#FF385A7F</color>
+    <color name="seekbarindexvalitem_color_normal">#FFffffff</color>
+    <color name="seekbarindexvalitem_color_press">#FFffffff</color>
+
+    <color name="colorPrimary">#FF1493</color>
+    <color name="colorPrimaryDark">#D02090</color>
+    <color name="colorAccent">#FF4081</color>
+
+<!--- 99d0edf3 -->
+    <color name="musicbox_itemInMaster_bg_color">#99ffffff</color>
+    <color name="musicbox_listitem_press_color">#FFf5f5f5</color>
+    <color name="musicbox_listitem_normal_color">#FFffffff</color>
+
+    <color name="musicbox_listPageplayBg_color">#FFffffff</color>
+    <color name="musicbox_listPageplayMode_color">#FF1e1e1e</color>
+    <color name="musicbox_listPageTopbarBg_color">#FF0090ff</color>
+    <color name="musicbox_listItemTextFile_color">#FF1e1e1e</color>
+    <color name="musicbox_listItemTextArt_color">#FF888888</color>
+    <color name="musicbox_listLine_color">#FFebebeb</color>
+    <color name="musicbox_listLinefrg_color">#FFF3F3F3</color>
+
+    <color name="musicbox_LrcPagePlay_Color_0">#FF0090ff</color>
+    <color name="musicbox_LrcPagePlay_Color_1">#FFfc9f4d</color>
+    <color name="musicbox_LrcPagePlay_Color_2">#FF58b2dc</color>
+    <color name="musicbox_LrcPagePlay_Color_3">#FFcb4042</color>
+    <color name="musicbox_LrcPagePlay_Color_4">#FF7b90d2</color>
+    <color name="musicbox_LrcPagePlay_Color_5">#FFdb4d6d</color>
+    <color name="musicbox_LrcPagePlay_Color_6">#FF5dac81</color>
+    <color name="musicbox_LrcPagePlay_Color_7">#FF91989f</color>
+    <color name="musicbox_LrcPagePlay_Color_8">#FFa5857e</color>
+    <color name="musicbox_LrcPagePlay_Color_9">#FFf9bf45</color>
+    <color name="musicbox_LrcPagePlay_Color_10">#FF90b44b</color>
+    <color name="welcome_inputsource_bg">#2C363E</color>
+    <color name="musicbox_LrcPagePlay_text_normal">#D8ffffff</color>
+    <color name="musicbox_LrcPageFragLine_Color">#28ffffff</color>
+    <color name="musicbox_fileindex_color">#FF999999</color>
+    <color name="musicbox_OptMsg_color">#FF000000</color>
+    <color name="musicbox_MusicPageMsg_color">#FF666666</color>
+    <color name="musicbox_offline_color">#9Fffffff</color>
+
+
+    <color name="EFF_hardware_text_press">#FFFF0000</color>
+    <color name="EFF_hardware_text_normal">#FF8B9EB6</color>
+    <color name="output_type_color">#828282</color>
+
+    <color name="txt_normal">#FFFFFF</color>
+    <color name="txt_press">#2698F0</color>
+</resources>

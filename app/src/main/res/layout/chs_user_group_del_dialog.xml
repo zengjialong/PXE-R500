@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/id_llyout_dialog_user_group_del"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:gravity="center"
+	android:background="@drawable/chs_ly_aux_input_top_bg"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:layout_width="300dp"
+		android:layout_height="@dimen/space_30"
+
+		android:orientation="vertical">
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="@dimen/space_10"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:textSize="18sp"
+		android:textColor="@color/dialog_text_normal_color"
+		android:text="@string/DialogDel"/>
+		<ImageView
+			android:id="@+id/id_btn_exit"
+			android:layout_width="@dimen/space_30"
+			android:layout_height="@dimen/space_30"
+			android:layout_marginRight="@dimen/space_5"
+			android:layout_alignParentRight="true"
+			android:src="@drawable/chs_dialog_exit" />
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="300dp"
+		android:layout_height="150dp"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:background="@drawable/chs_dialog_bg"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/id_llyout_user_groupdel"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/id_b_tv_usergroupname_del"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+				android:layout_marginTop="5dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:textSize="18sp"
+				android:textColor="@color/dialog_text_normal_color"
+				android:text="@string/opt_delete"/>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/id_llyout_user_group_del_sel"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:orientation="horizontal">
+			<View
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				/>
+			<Button
+				android:id="@+id/id_b_group_delete_sel_cancle"
+				android:layout_width="70dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:text="@string/cancel"
+				android:textAllCaps="false"
+				android:background="@drawable/chs_dialog_btn_normal"
+				android:textColor="@color/dialog_btn_text_normal_color"
+				android:textSize="13sp" />
+
+			<Button
+				android:id="@+id/id_b_group_sel_delete"
+				android:layout_width="70dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:text="@string/DialogDel"
+				android:layout_marginLeft="@dimen/space_10"
+				android:layout_marginRight="@dimen/space_10"
+				android:background="@drawable/chs_dialog_btn_normal"
+				android:textAllCaps="false"
+				android:textColor="@color/dialog_btn_text_normal_color"
+				android:textSize="13sp"  />
+
+		</LinearLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

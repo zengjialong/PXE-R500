@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_llyout_about_dialog"
+    android:layout_width="320dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    >
+
+    <LinearLayout
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chs_ly_aux_input_top_bg"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="320dip"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:layout_marginLeft="@dimen/space_10"
+                android:text="@string/About"
+                android:textColor="@color/text_color_about"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/id_setdelay_dialog_button"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space_5"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/chs_dialog_exit"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="320dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chs_ly_aux_input_img_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:textColor="@color/text_color_about"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/id_tv_soft_version"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:text="@string/Software_version"
+                android:textColor="@color/text_color_about"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/id_tv_device_version"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:text="@string/device_version"
+                android:textColor="@color/text_color_about"
+                android:textSize="15sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/id_tv_copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:textColor="@color/text_color_about"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_20"
+                android:layout_marginLeft="10dp"
+                android:maxLines="2"
+                android:text="All Rights Reserved."
+                android:layout_marginBottom="@dimen/space_15"
+                android:textColor="@color/text_color_about"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/id_b_about_ok"
+                android:layout_width="@dimen/space_80"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/chs_dialog_selector"
+                android:gravity="center"
+                android:text="@string/Sure"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/dialog_btn_text_normal_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

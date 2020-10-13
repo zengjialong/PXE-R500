@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+          android:layout_height="@dimen/space_30"
+        android:background="@drawable/chs_ly_aux_input_top_bg"
+
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/id_oct_title"
+            android:layout_width="wrap_content"
+              android:layout_height="@dimen/space_30"
+            android:gravity="center_vertical"
+            android:text="@string/DelayGroup"
+            android:layout_marginLeft="@dimen/space_10"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/id_setdelay_dialog_button"
+            android:layout_width="@dimen/space_30"
+              android:layout_height="@dimen/space_30"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/chs_dialog_exit"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chs_ly_aux_input_img_normal"
+        android:paddingLeft="@dimen/space_1"
+        android:paddingRight="@dimen/space_1"
+        android:paddingBottom="@dimen/space_1"
+        android:orientation="vertical">
+
+
+
+
+        <Button
+            android:id="@+id/id_F_sound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:text="@string/F_Sound"
+            android:textAllCaps="false"
+            android:textColor="@color/oct_select_num"
+            android:textSize="@dimen/space_13"
+            android:layout_gravity="center"
+            android:background="@drawable/button_style"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/id_R_sound"
+            android:layout_width="match_parent"
+            android:text="@string/R_Sound"
+            android:textAllCaps="false"
+            android:textColor="@color/oct_select_num"
+            android:textSize="@dimen/space_13"
+              android:layout_height="@dimen/space_40"
+            android:gravity="center"
+            android:background="@drawable/button_style"
+            />
+        <Button
+            android:id="@+id/id_S_sound"
+            android:layout_width="match_parent"
+            android:text="@string/S_Sound"
+            android:textAllCaps="false"
+            android:textColor="@color/oct_select_num"
+            android:textSize="@dimen/space_13"
+            android:layout_height="@dimen/space_40"
+            android:gravity="center"
+            android:background="@drawable/button_style"
+            />
+        <Button
+            android:id="@+id/id_A_sound"
+            android:layout_width="match_parent"
+            android:text="@string/A_Sound"
+            android:textAllCaps="false"
+            android:textColor="@color/oct_select_num"
+            android:textSize="@dimen/space_13"
+
+                android:layout_height="@dimen/space_40"
+            android:gravity="center"
+            android:background="@drawable/button_style" />
+        <Button
+            android:id="@+id/id_None_Sound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:text="@string/None_Sound"
+            android:textAllCaps="false"
+            android:textColor="@color/oct_select_num"
+            android:textSize="@dimen/space_13"
+            android:gravity="center"
+            android:background="@drawable/button_style" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

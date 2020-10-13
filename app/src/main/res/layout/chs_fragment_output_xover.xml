@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:eq_seekbar="http://schemas.android.com/apk/res-auto"
+    xmlns:mhsb_seekbar="http://schemas.android.com/apk/res-auto"
+    xmlns:wheelview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nullc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.chs.mt.pxe_r500.tools.wheel.WheelView
+            android:id="@+id/id_output_va_wheelview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_35"
+            android:layout_gravity="center"
+            wheelview:fontSize="@dimen/text_size_TopBarChannelSel"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/channel_bg"
+            wheelview:fontColor="@color/text_color_TopBarChannelSel"/>
+       <com.chs.mt.pxe_r500.util.CenterShowHorizontalScrollView
+           android:id="@+id/id_center_hor"
+           android:layout_width="match_parent"
+           android:scrollbars="none"
+           android:visibility="gone"
+           android:layout_height="@dimen/space_40"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="8.0"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- 滤波器  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="5.0"
+                    android:background="@drawable/layoutc_normal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/hlpass_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <!-- 分频器   -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="1dp"
+                                android:gravity="center"
+                                android:scaleType="fitCenter"
+                                android:text="@string/XOver"
+                                android:textColor="@color/output_va_b_text_color_normal"
+                                android:textSize="@dimen/space_13"/>
+                        </LinearLayout>
+                        <!-- 高低通   -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <!-- 高通   -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <!--  android:singleLine="true"
+                                android:ellipsize="end"-->
+                                <TextView
+                                    android:layout_width="@dimen/space_80"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:scaleType="fitCenter"
+                                    android:text="@string/HighPass"
+
+                                    android:autoSizeTextType="uniform"
+                                    android:autoSizeMinTextSize="@dimen/space_4"
+                                    android:autoSizeMaxTextSize="@dimen/space_13"
+
+                                    android:textColor="@color/output_va_b_text_color_normal"
+                                     />
+                            </LinearLayout>
+                            <!-- 低通-->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="@dimen/space_80"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/LowPass"
+                                    android:autoSizeTextType="uniform"
+                                    android:autoSizeMinTextSize="@dimen/space_4"
+                                    android:autoSizeMaxTextSize="@dimen/space_13"
+                                    android:textColor="@color/output_va_b_text_color_normal"
+                                     />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/id_b_hp_freq_reset"
+                                android:layout_width="@dimen/space_40"
+                                android:layout_height="@dimen/filter_type_freq_button_height"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:src="@drawable/chs_eq_freq_off"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color_xovernotset"
+                                android:textSize="@dimen/filter_type_freq_text_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/id_b_lp_freq_reset"
+                                android:layout_width="@dimen/space_40"
+                                android:layout_height="@dimen/filter_type_freq_button_height"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:src="@drawable/chs_eq_freq_off"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color_xovernotset"
+                                android:textSize="@dimen/filter_type_freq_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--  类型   -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/id_ly_hp_filter_va"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_xover_normal"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/id_b_hp_filter_va"
+                                    android:layout_width="@dimen/space_80"
+                                    android:layout_height="@dimen/space_30"
+                                    android:layout_gravity="center"
+                                    android:background="@color/nullc"
+                                    android:clickable="false"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/FilterBW"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color_xovernotset"
+                                    android:textSize="13sp"
+                                   />
+                                <ImageView
+                                    android:id="@+id/id_img_xiala"
+                                    android:layout_width="@dimen/space_15"
+                                    android:layout_height="@dimen/space_15"
+                                    android:src="@drawable/chs_xiala"
+                                    android:layout_marginRight="@dimen/space_2"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/id_ly_lp_filter_va"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_xover_normal"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/id_b_lp_filter_va"
+                                    android:layout_width="@dimen/space_80"
+                                    android:layout_height="@dimen/filter_type_freq_button_height"
+                                    android:layout_gravity="center"
+                                    android:background="@color/nullc"
+                                    android:clickable="false"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/FilterLR"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color_xovernotset"
+                                    android:textSize="13sp" />
+                                <ImageView
+                                    android:id="@+id/id_lp_img_xiala"
+                                    android:layout_width="@dimen/space_15"
+                                    android:layout_height="@dimen/space_15"
+                                    android:src="@drawable/chs_xiala"
+                                    android:layout_marginRight="@dimen/space_2"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--  频率   -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/id_b_hp_freq_va"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_xover_normal"
+                                android:gravity="center"
+                                android:text="20"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color_xovernotset"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/id_b_lp_freq_va"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_xover_normal"
+                                android:gravity="center"
+                                android:text="20"
+                                android:textAllCaps="false"
+                                android:textColor="@color/text_color_xovernotset"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--  斜率   -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/id_ly_hp_otc_va"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_xover_normal"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/id_b_hp_otc_va"
+                                    android:layout_width="@dimen/space_80"
+                                    android:layout_height="@dimen/space_30"
+                                    android:layout_gravity="center"
+                                    android:background="@color/nullc"
+                                    android:clickable="false"
+                                    android:singleLine="true"
+                                    android:layout_centerInParent="true"
+                                    android:text="@string/Otc24dB"
+                                    android:textAllCaps="false"
+                                    android:textAlignment="gravity"
+                                    android:textColor="@color/text_color_xovernotset"
+                                    android:textSize="13sp"
+                                    />
+                                <ImageView
+                                    android:id="@+id/id_hp_img_oct"
+                                    android:layout_width="@dimen/space_15"
+                                    android:layout_height="@dimen/space_15"
+                                    android:src="@drawable/chs_xiala"
+                                    android:layout_marginRight="@dimen/space_2"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/id_ly_lp_otc_va"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_xover_normal"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/id_b_lp_otc_va"
+                                    android:layout_width="@dimen/space_80"
+                                    android:layout_height="@dimen/space_30"
+                                    android:layout_gravity="center"
+                                    android:background="@color/nullc"
+                                    android:clickable="false"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:singleLine="true"
+                                    android:text="@string/Otc24dB"
+                                    android:textAllCaps="false"
+                                    android:textSize="13sp"
+                                    android:textColor="@color/text_color_xovernotset"
+                                    />
+                                <ImageView
+                                    android:id="@+id/id_lp_img_oct"
+                                    android:layout_width="@dimen/space_15"
+                                    android:layout_height="@dimen/space_15"
+                                    android:src="@drawable/chs_xiala"
+                                    android:layout_marginRight="@dimen/space_2"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/layoutc_normal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="5.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <!-- 输出通道设置，静音 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/output_type"
+                                android:textAllCaps="false"
+                                android:paddingLeft="@dimen/space_5"
+                                android:textColor="@color/white"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="@dimen/space_4"
+                                android:autoSizeMaxTextSize="@dimen/space_12"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                               />
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center"
+                                android:layout_weight="5.5"
+
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/id_ly_output_name_ch"
+                                    android:layout_width="@dimen/space_100"
+                                    android:layout_height="@dimen/space_30"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/btn_output_name"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/id_b_output_name_ch"
+                                        android:layout_width="@dimen/InputPage_Xover_Btnly_width"
+                                        android:layout_height="match_parent"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:scaleType="fitCenter"
+                                        android:text="FL-Full-rangge1"
+                                        android:gravity="center"
+                                        android:layout_centerInParent="true"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:singleLine="true"
+                                       />
+
+                                    <ImageView
+                                        android:id="@+id/id_lp_img_type"
+                                        android:layout_width="@dimen/space_15"
+                                        android:layout_height="@dimen/space_15"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="-3dp"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/chs_xiala" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                />
+                        </LinearLayout>
+
+
+                        <!-- 输出通道 正反相，静音 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/id_txt_volume"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/output_volume"
+                                android:textAllCaps="false"
+                                android:paddingLeft="@dimen/space_5"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="@dimen/space_4"
+                                android:autoSizeMaxTextSize="@dimen/space_12"
+                                android:textColor="@color/white"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                          />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/id_ly_mute"
+                                    android:layout_width="@dimen/space_30"
+                                    android:layout_height="@dimen/space_30"
+                                    android:layout_gravity="center"
+                                    android:fillViewport="true"
+                                    android:gravity="center"
+                                    android:src="@drawable/chs_mute_normal" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/id_llyout_output_valume_va"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:id="@+id/id_ly_weight_sub"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+                                    <com.chs.mt.pxe_r500.tools.LongCickButton
+                                        android:id="@+id/id_button_val_sub"
+                                        android:layout_width="@dimen/space_20"
+                                        android:layout_height="@dimen/space_20"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:background="@drawable/chs_btn_sub_selector"/>
+                                </LinearLayout>
+                                <com.chs.mt.pxe_r500.tools.MHS_SeekBar
+                                    android:id="@+id/id_sb_13"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="4"
+                                    android:thumb="@drawable/chs_output_thumb"
+                                    mhsb_seekbar:mhs_numtext_color="@color/mastervolume_seekbar_progress_color"
+                                    mhsb_seekbar:mhs_numtext_size="12sp"
+                                    mhsb_seekbar:mhs_progress_background_color="@color/mastervolume_seekbar_progress_bg_color"
+                                    mhsb_seekbar:mhs_progress_color="@color/mastervolume_seekbar_progress_color"
+                                    mhsb_seekbar:mhs_progress_max="60"
+                                    mhsb_seekbar:mhs_progress_width="2dp" />
+
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:id="@+id/id_ly_weight_inc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+                                    <com.chs.mt.pxe_r500.tools.LongCickButton
+                                        android:id="@+id/id_button_val_inc"
+                                        android:layout_width="@dimen/space_20"
+                                        android:layout_height="@dimen/space_20"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:background="@drawable/chs_btn_inc_selector"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="@dimen/space_30"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/id_b_output_val_va"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:gravity="center"
+                                        android:scaleType="fitCenter"
+                                        android:singleLine="true"
+                                        android:text="-60"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <!-- 输出通道设置，静音 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/output_polar"
+                                android:paddingLeft="@dimen/space_5"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/space_12" />
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4" />
+
+                            <LinearLayout
+                                android:id="@+id/id_ly_output_polar"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center"
+                                android:layout_weight="5.5"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/space_100"
+                                    android:layout_height="@dimen/space_30"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/btn_output_name"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/id_b_output_polar"
+                                        android:layout_width="@dimen/space_100"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:gravity="center"
+                                        android:scaleType="fitCenter"
+                                        android:text="@string/Polar_P"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/space_12" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!-- 输出音量控制  -->
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_b_encryption_output_va"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_xover_normal"
+                android:text="@string/Encrying_data"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color_red"
+                android:textSize="35sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+        <!-- 输出音量，静音，正反相等 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ly_channel_link_va"
+                    android:layout_width="@dimen/filter_button_widthf"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_input_name"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/id_ly_link"
+                        android:layout_width="@dimen/space_20"
+                        android:layout_height="@dimen/space_20"
+                        android:src="@drawable/chs_link" />
+
+                    <Button
+                        android:id="@+id/id_d_channel_link_va"
+                        android:layout_width="57dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:background="@color/nullc"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/btn_Link"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ly_channel_lock_va"
+                    android:layout_width="@dimen/filter_button_widthf"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_input_name"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_20"
+                        android:layout_height="@dimen/space_20"
+                        android:src="@drawable/chs_lock" />
+
+                    <Button
+                        android:id="@+id/id_d_channel_lock_va"
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:background="@color/nullc"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/Locked"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ly_channel_reset_va"
+                        android:layout_width="@dimen/filter_button_widthf"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_input_name"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/space_20"
+                            android:layout_height="@dimen/space_20"
+                            android:src="@drawable/chs_reset" />
+
+                        <Button
+                            android:id="@+id/id_d_channel_reset_va"
+                            android:layout_width="@dimen/space_60"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:background="@color/nullc"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/Reset"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+        <!-- 联调保存-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/id_b_output_save_va"
+                    android:layout_width="@dimen/filter_button_width"
+                    android:layout_height="@dimen/filter_type_freq_button_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_xover_normal"
+                    android:gravity="center"
+                    android:text="Store"
+                    android:textColor="@color/text_color_autolink_normal"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_b_encryption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chs_btn_encryption"
+        android:text="@string/Encrying_data"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color_red"
+        android:textSize="35sp"
+        android:visibility="gone" />
+</RelativeLayout>

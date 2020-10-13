@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- public -->
+    <dimen name="ad_img_radius">10dp</dimen>
+    <!-- Top Bar -->
+    <dimen name="layout_height_Top_Bar">40dp</dimen>
+    <dimen name="layout_height_Top_BarLine">41dp</dimen>
+    <!-- Top Bar Logo -->
+    <dimen name="IV_Logo_width_Top_Bar">120dp</dimen>
+    <dimen name="IV_Logo_height_Top_Bar">30dp</dimen>
+    <dimen name="IV_Logo_marginTop_Top_Bar">5dp</dimen>
+    <dimen name="IV_Logo_marginLeft_Top_Bar">-350dp</dimen>
+    <!-- Top Bar Connect -->
+    <dimen name="B_connect_width_Top_Bar">45dp</dimen>
+    <dimen name="B_connect_height_Top_Bar">45dp</dimen>
+    <dimen name="B_connect_marginTop_Top_Bar">4dp</dimen>
+    <dimen name="B_connect_marginLeft_Top_Bar">40dp</dimen>
+    <!-- Top Bar TextView Connect -->
+    <dimen name="TV_connect_textSize_Top_Bar">-12sp</dimen>
+    <dimen name="TV_connect_marginLeft_Top_Bar">-98dp</dimen>
+    <dimen name="text_size_TopBarChannelSel">15sp</dimen>
+    <!-- menu -->
+    <dimen name="menu_item_height">40dp</dimen>
+    <dimen name="menu_item_img_size">25dp</dimen>
+
+    <dimen name="mac_config_item_height">45dp</dimen>
+    <dimen name="mac_config_item_margin">10dp</dimen>
+    <dimen name="mac_config_item_text_size">16sp</dimen>
+    <dimen name="mac_config_item_content_text_size">13sp</dimen>
+    <!-- ViewPager -->
+    <dimen name="ViewPager_height">520dp</dimen>
+    <dimen name="b_homephotoshow_index_size">10dp</dimen>
+    <dimen name="b_homephotoshow_index_ml">10dp</dimen>
+    <!-- Bottom Bar -->
+    <dimen name="Bottom_bar_height">55dp</dimen>
+    <!-- Bottom Bar  ImageViewclick -->
+    <dimen name="ImageViewclick_Layout_width_Bottom_Bar">90dp</dimen>
+    <!-- Bottom Bar ImageView -->
+    <dimen name="ImageView_size_Bottom_Bar">35dp</dimen>
+    <dimen name="ImageView_marginTop_Bottom_Bar">5dp</dimen>
+    <dimen name="ImageView_marginLeft_size_Bottom_Bar">34dp</dimen>
+    <!-- Bottom Bar TextView -->
+    <dimen name="text_size_Bottom_Bar">14sp</dimen>
+    <dimen name="text_Layout_height_size_Bottom_Bar">20dp</dimen>
+    <dimen name="text_Layout_marginTop_size_Bottom_Bar">37dp</dimen>
+    <!-- Home Input -->
+    <!--    用户组   -->
+    <dimen name="usergroup_button_layout_size">80dp</dimen>
+    <dimen name="usergroup_button_layout_marginSide">20dp</dimen>
+    <dimen name="usergroup_button_layoutwidth">75dp</dimen>
+    <dimen name="usergroup_button_layoutheight">30dp</dimen>
+
+    <dimen name="usergroup_button_layout_width">110dp</dimen>
+    <dimen name="usergroup_button_layout_height">70dp</dimen>
+    <dimen name="usergroup_button_layout_marginLeft">5dp</dimen>
+
+    <dimen name="usergroup_button_tv_num_marginTop">0dp</dimen>
+    <dimen name="usergroup_button_tv_name_marginTop">0dp</dimen>
+    <dimen name="usergroup_button_tv_num_height">25dp</dimen>
+    <dimen name="usergroup_button_tv_name_height">25dp</dimen>
+    <dimen name="usergroup_button_tv_num_size">20sp</dimen>
+    <dimen name="usergroup_button_tv_name_size">12sp</dimen>
+
+    <dimen name="memony_button_text_size">25sp</dimen>
+    <dimen name="group_opt_text_size">13sp</dimen>
+    <dimen name="input_source_add_width">80dp</dimen>
+    <dimen name="ImageView_size_enteritem">50dp</dimen>
+    <dimen name="text_enteritem_height">40dp</dimen>
+    <dimen name="text_enteritem_marginTop">0dp</dimen>
+
+    <dimen name="usergroup_vbtn_layoutwidth">120dp</dimen>
+    <dimen name="usergroup_vbtn_layoutheight">203dp</dimen>
+
+
+    <dimen name="page_margin_bottom">10dp</dimen>
+    <!-- DelaySettings -->
+    <!--     6个通道的框大小   -->
+    <dimen name="btn_sound_field_width">60dp</dimen>
+    <dimen name="btn_sound_field_height">23dp</dimen>
+    <dimen name="btn_sound_field_mid_height">15dp</dimen>
+    <dimen name="btn_sound_field_textsize">12sp</dimen>
+
+
+    <dimen name="delay_item_layout_width">90dp</dimen>
+    <dimen name="delay_item_layout_height">130dp</dimen>
+    <dimen name="delay_item_SubInc_Size">40dp</dimen>
+    <dimen name="delay_item_Speak_Size">40dp</dimen>
+    <dimen name="delay_item_val_width">40dp</dimen>
+    <dimen name="delay_item_val_height">30dp</dimen>
+
+    <dimen name="delay_channel_lly_ML">20dp</dimen>
+    <dimen name="delay_channel_lly_MT">10dp</dimen>
+    <!--     delay_bg 框大小   -->
+
+    <dimen name="delay_item_delay_ch_name_width">80dp</dimen>
+    <dimen name="delay_item_delay_ch_name_height">25dp</dimen>
+    <dimen name="delay_item_delay_ch_name_text_size">12sp</dimen>
+    <dimen name="delay_item_delay_ch_name_marginLeft">5dp</dimen>
+    <dimen name="delay_item_delay_ch_val_width">80dp</dimen>
+    <dimen name="delay_item_delay_ch_val_height">25dp</dimen>
+    <dimen name="delay_item_delay_bg_layout_width">56dp</dimen>
+    <dimen name="delay_item_delay_bg_layout_height">30dp</dimen>
+    <dimen name="delay_item_delay_bg_marginTop">-100dp</dimen>
+    <dimen name="delay_item_delay_incsub_marginTop">-15dp</dimen>
+
+    <dimen name="delay_item_delay_bg_marginLeft">10dp</dimen>
+    <dimen name="delay_item_speaker_size">36dp</dimen>
+    <!--     delay TextView 框大小   -->
+    <dimen name="delay_item_delay_text_size">15sp</dimen>
+    <!--     SeekBar大小   -->
+    <dimen name="delay_item_SeekBar_width">120dp</dimen>
+    <dimen name="delay_item_SeekBar_height">40dp</dimen>
+    <dimen name="delay_item_SeekBar_marginTop">20dp</dimen>
+    <dimen name="delay_item_SeekBar_marginLeft">5dp</dimen>
+    <dimen name="delay_item_SeekBar_maxHeight">2dp</dimen>
+    <dimen name="delay_item_SeekBar_minHeight">2dp</dimen>
+    <dimen name="set_delay_progress_width">2dp</dimen>
+
+    <!--     增减键大小    -->
+    <dimen name="delay_item_llyout_hight">135dp</dimen>
+    <dimen name="delay_item_llyout_width">230dp</dimen>
+    <dimen name="delay_item_index_size">50dp</dimen>
+    <dimen name="delay_item_button_incsub_size">21dp</dimen>
+    <dimen name="delay_item_button_incsub_marginTop">9dp</dimen>
+    <dimen name="delay_item_marginTop">2dp</dimen>
+    <dimen name="delay_item_arginLeft">20dp</dimen>
+    <dimen name="delay_sub_arginLeft">2dp</dimen>
+    <dimen name="delay_inc_arginLeft">66dp</dimen>
+    <!--     延时单位    -->
+    <dimen name="delay_unit_b_size">20dp</dimen>
+    <dimen name="delay_delayunit_text_size">15sp</dimen>
+    <!-- Xover -->
+    <!--     通道的框大小   -->
+    <dimen name="channel_layout_height">90dp</dimen>
+    <dimen name="channel_layout_matop">19dp</dimen>
+    <dimen name="xover_channel_leftside_marginLeft">5dp</dimen>
+    <dimen name="channel_name_tx_width">40dp</dimen>
+    <dimen name="channel_name_tx_height">30dp</dimen>
+    <dimen name="channel_name_tx_matop">15dp</dimen>
+
+    <dimen name="xover_channel_bg_width">35dp</dimen>
+    <dimen name="xover_channel_bg_height">25dp</dimen>
+    <dimen name="xover_channel_bg_matop">15dp</dimen>
+
+    <dimen name="filter_layout_height">40dp</dimen>
+    <dimen name="filter_spinner_width">80dp</dimen>
+    <dimen name="filter_button_width">55dp</dimen>
+    <dimen name="filter_button_height">28dp</dimen>
+    <dimen name="filter_button_widthf">95dp</dimen>
+    <dimen name="filter_type_text_size">12sp</dimen>
+    <dimen name="channel_type_text_size">11sp</dimen>
+    <dimen name="channel_type_sub_text_size">11sp</dimen>
+    <dimen name="filter_type_freq_text_size">10sp</dimen>
+    <dimen name="filter_type_freq_button_height">26dp</dimen>
+    <dimen name="filter_otc_freq_marginLeft">8dp</dimen>
+    <dimen name="freq_button_paddingLeft">3dp</dimen>
+
+    <dimen name="xover_hlpass_llyout_top">10dp</dimen>
+    <dimen name="xover_hlpass_text_marginLeft">10dp</dimen>
+    <dimen name="xover_hlpass_text_height">30dp</dimen>
+    <dimen name="xover_hlpass_text_width">45dp</dimen>
+    <dimen name="xover_lowpass_text_marginTop">35dp</dimen>
+    <dimen name="xover_hlpass_filteroctfreq_marginLeft">-20dp</dimen>
+    <dimen name="xover_hlpass_filteroctfreq_marginTop">10dp</dimen>
+
+    <dimen name="xover_channel_marginLeft">30dp</dimen>
+    <dimen name="xover_two_channel_marginLeft">40dp</dimen>
+    <!-- 输出通道 -->
+    <!--     输出通道     -->
+    <dimen name="output_channel_two_hight">-10dp</dimen>
+
+    <dimen name="double_output_layout_height">160dp</dimen>
+    <dimen name="double_output_layout_marginLeft">7dp</dimen>
+    <dimen name="eq_30">30.0dip</dimen>
+    <dimen name="dialog_width">300.0dip</dimen>
+    <dimen name="other_dialog_width">280.0dip</dimen>
+    <dimen name="single_output_layout_height">45dp</dimen>
+    <dimen name="single_output_button_size">30dp</dimen>
+
+    <dimen name="output_channel_name_height">22dp</dimen>
+    <dimen name="output_channel_name_width">55dp</dimen>
+    <dimen name="output_channel_name_size">12sp</dimen>
+    <dimen name="output_channel_name_marginLeft">40dp</dimen>
+    <dimen name="output_channel_name_marginTop">10sp</dimen>
+
+    <dimen name="output_channel_rightside_marginLeft">20dp</dimen>
+    <dimen name="output_channel_leftside_marginLeft">3dp</dimen>
+
+    <dimen name="output_channel_llyout_height">175dp</dimen>
+    <dimen name="output_channel_MCL_SeekBar_size">135dp</dimen>
+    <dimen name="output_channel_MCL_SeekBar_width">155dp</dimen>
+
+    <dimen name="output_marginSide">10dp</dimen>
+    <dimen name="output_view_ly_width">100dp</dimen>
+    <dimen name="output_view_ly_height">80dp</dimen>
+    <dimen name="output_view_ly2_height">50dp</dimen>
+    <dimen name="output_view_index_width">20dp</dimen>
+    <dimen name="output_view_index_height">20dp</dimen>
+    <dimen name="output_view_mute_width">30dp</dimen>
+    <dimen name="output_view_mute_height">30dp</dimen>
+    <dimen name="output_view_polar_width">50dp</dimen>
+    <dimen name="output_view_polar_height">20dp</dimen>
+    <dimen name="output_view_val_width">50dp</dimen>
+    <dimen name="output_view_val_height">20dp</dimen>
+
+    <!-- ap_dbs460_ap_ap.tools.MCL_SeekBar  -->
+    <dimen name="output_channel_sbp_linelong">6dp</dimen>
+    <dimen name="output_channel_sbp_thumb_r">3dp</dimen>
+
+    <!-- 输出音量控制  -->
+    <dimen name="output_valume_layout_height">30dp</dimen>
+    <dimen name="output_valume_height">40dp</dimen>
+    <dimen name="output_valume_width">60dp</dimen>
+    <dimen name="output_valume_iv_layout_width">70dp</dimen>
+    <dimen name="output_valume_tv_size">30sp</dimen>
+    <dimen name="output_valume_marginTop">-85dp</dimen>
+    <dimen name="output_valume_marginLeft">40dp</dimen>
+    <!-- 输出音量联调 -->
+    <dimen name="output_channel_connect_marginTop">20dp</dimen>
+    <dimen name="output_channel_connect_marginLeft">15dp</dimen>
+    <dimen name="output_channel_connect_llyout_height">40dp</dimen>
+    <dimen name="output_channel_connect_height">20dp</dimen>
+    <dimen name="output_channel_connect_width">40dp</dimen>
+    <dimen name="output_channel_connect_textsize">15sp</dimen>
+    <!-- 输出通道 -->
+    <!--     6个通道的框大小   -->
+    <dimen name="output_item_ly_marginSide">40dp</dimen>
+
+    <dimen name="output_item_lly_mtop">10dp</dimen>
+    <dimen name="output_item_layout_width">160dp</dimen>
+    <dimen name="output_item_layout_height">135dp</dimen>
+    <dimen name="output_item_fi_marginTop">-128dp</dimen>
+    <dimen name="output_item_ch_name_width">50dp</dimen>
+    <dimen name="output_item_ch_name_height">30dp</dimen>
+    <dimen name="output_name_val_height">25dp</dimen>
+    <dimen name="output_ch_name_marginLeft">15dp</dimen>
+    <dimen name="output_item_ch_name_text_size">11sp</dimen>
+    <dimen name="output_val_width">40dp</dimen>
+    <dimen name="output_val_marginLeft">50dp</dimen>
+    <dimen name="output_val_text_size">20sp</dimen>
+    <dimen name="output_item_SeekBar_width">140dp</dimen>
+    <dimen name="output_item_SeekBar_height">40dp</dimen>
+    <dimen name="output_item_SeekBar_marginTop">5dp</dimen>
+    <dimen name="output_item_SeekBar_marginLeft">10dp</dimen>
+
+    <dimen name="output_item_delay_incsub_marginTop">-10dp</dimen>
+    <dimen name="output_item_button_incsub_width">21dp</dimen>
+    <dimen name="output_item_button_incsub_height">25dp</dimen>
+    <dimen name="output_item_button_valume_width">60dp</dimen>
+    <dimen name="output_item_button_valume_height">30dp</dimen>
+    <dimen name="output_sub_marginLeft">10dp</dimen>
+    <dimen name="output_inc_marginLeft">80dp</dimen>
+    <!-- 正反相，静音选择  -->
+    <dimen name="output_p_mute_llyout_height">30dp</dimen>
+    <dimen name="output_p_mute_llyout_width">60dp</dimen>
+    <dimen name="output_p_textsize">12sp</dimen>
+    <dimen name="output_p_mute_marginTop">5dp</dimen>
+    <dimen name="output_p_mute_marginLeft">10dp</dimen>
+    <dimen name="output_p_mute_button_width">40dp</dimen>
+    <dimen name="output_p_mute_button_width_in">50dp</dimen>
+    <dimen name="output_p_mute_button_height">18dp</dimen>
+    <dimen name="output_p_button_MT">-3dp</dimen>
+    <dimen name="output_p_mute_button_ML">50dp</dimen>
+    <dimen name="output_pm_button_width">1dp</dimen>
+    <dimen name="output_pm_button_height">18dp</dimen>
+    <dimen name="output_pm_button_MT">4dp</dimen>
+    <dimen name="output_name_text_size">12sp</dimen>
+    <dimen name="output_name_button_width">82dp</dimen>
+    <dimen name="output_name_button_height">22dp</dimen>
+
+    <dimen name="output_right_channel_mf">10dp</dimen>
+    <dimen name="output_ipsp_text_size">14sp</dimen>
+
+    <dimen name="output_link_button_size">20dp</dimen>
+    <dimen name="output_link_cha_width">65dp</dimen>
+    <dimen name="output_link_cha_height">25dp</dimen>
+    <dimen name="output_link_chaname_size">10sp</dimen>
+    <!-- 任意联调弹出框 -->
+    <dimen name="output_tv_linkch_size1">11sp</dimen>
+    <dimen name="output_b_linkch_width">40dp</dimen>
+    <dimen name="output_b_linkch_height">20dp</dimen>
+    <dimen name="output_b_linkch_matop">0dp</dimen>
+    <dimen name="output_b_linkch_maleft">10dp</dimen>
+    <dimen name="output_linkgroup_height">30dp</dimen>
+    <dimen name="output_b_linkg_size">20dp</dimen>
+    <dimen name="output_tv_linkgn_width">30dp</dimen>
+    <dimen name="output_tv_linkgnlist_width">180dp</dimen>
+    <dimen name="output_tv_linkgn_height">25dp</dimen>
+    <dimen name="output_tv_linkgn_marginLeft">0dp</dimen>
+    <dimen name="output_tv_linkgn_marginTop">0dp</dimen>
+    <dimen name="output_tv_linkgn_size">13sp</dimen>
+    <dimen name="output_tv_linkgnlist_size">12sp</dimen>
+    <dimen name="output_b_linkgd_width">60dp</dimen>
+    <dimen name="output_b_linkgd_height">25dp</dimen>
+    <dimen name="output_b_linkg_matop">0dp</dimen>
+
+    <dimen name="output_llyout_link_groupmenber_marginLeft">10dp</dimen>
+    <dimen name="output_tv_linkgm_size">12sp</dimen>
+    <dimen name="output_b_linkgm_marginLeft">5dp</dimen>
+
+    <!-- 输出通道 -->
+    <dimen name="output_channel_text_size">12sp</dimen>
+    <dimen name="output_channel_hight">30dp</dimen>
+    <dimen name="output_channel_line_mid_hight">15dp</dimen>
+
+    <dimen name="output_va_b_text_size">12sp</dimen>
+    <dimen name="output_va_subinc_size">25dp</dimen>
+    <dimen name="output_va_v_index_size">10dp</dimen>
+    <dimen name="output_va_v_index_width">20dp</dimen>
+
+    <dimen name="OutputPage_Xover_text_size">13sp</dimen>
+    <dimen name="OutputPage_Xover_Btnly_width">85dp</dimen>
+    <dimen name="OutputPage_Xover_Btn_width">90dp</dimen>
+    <dimen name="OutputPage_Xover_Btn_height">28dp</dimen>
+    <dimen name="OutputPage_Xover_Btn_marginleft">20dp</dimen>
+    <dimen name="OutputPage_Xover_Btn_index_sixe">15dp</dimen>
+
+    <dimen name="output_b_linkgm_width">30dp</dimen>
+    <dimen name="output_b_linkgm_height">25dp</dimen>
+    <!-- 联调通道 -->
+    <dimen name="output_channel_link_width">90dp</dimen>
+    <!-- 通信联调弹出框 -->
+    <dimen name="output_linkchannel_width">250dp</dimen>
+    <dimen name="output_linkchannel_height">35dp</dimen>
+    <dimen name="output_linkchannel_marginTop">10dp</dimen>
+    <dimen name="output_linkchannel_marginLeft">0dp</dimen>
+    <dimen name="output_b_linkch_marginTop">0dp</dimen>
+    <dimen name="output_llyout_linkch_size">20dp</dimen>
+    <dimen name="output_tv_linkch_width">170dp</dimen>
+    <dimen name="output_tv_linkch_height">30dp</dimen>
+    <dimen name="output_tv_linkch_marginLeft">5dp</dimen>
+    <dimen name="output_tv_linkch_marginTop">-3dp</dimen>
+    <dimen name="output_tv_linkch_size">15dp</dimen>
+    <!-- EQ -->
+    <dimen name="equalizer_enter_text_size">12sp</dimen>
+    <dimen name="equalizer_fg_size">10sp</dimen>
+    <dimen name="equalizer_sbout_progress_width">1dp</dimen>
+    <dimen name="equalizer_valume_width">53dp</dimen>
+    <dimen name="equalizer_valume_height">15dp</dimen>
+    <dimen name="equalizer_name_width">60dp</dimen>
+    <dimen name="equalizer_name_height">20dp</dimen>
+
+    <!-- 均衡器    -->
+    <dimen name="equalizer_view_width">592dp</dimen>
+    <dimen name="eq_name_text_size">15sp</dimen>
+    <dimen name="equalizer_marginLeft">8dp</dimen>
+    <dimen name="equalizer_marginLeftB">3dp</dimen>
+    <!--   MVS_SeekBar  -->
+    <dimen name="llyout_equalizer_width">55dp</dimen><!-- 55dp -->
+    <dimen name="equalizer_mvs_width">40dp</dimen>
+    <dimen name="equalizer_mvs_height">225dp</dimen>
+    <dimen name="equalizer_mvs_marginLeft">8dp</dimen>
+    <dimen name="equalizer_mvs_marginTop">-15dp</dimen>
+    <dimen name="equalizer_eq_progress_width">2dp</dimen>
+    <dimen name="equalizer_eq_progress_bar_round">0dp</dimen>
+    <!--   增益     -->
+    <dimen name="equalizer_gain_height">20dp</dimen>
+    <dimen name="equalizer_gain_text_size">12sp</dimen>
+    <dimen name="equalizer_gain_tv_martop">-15dp</dimen>
+    <!--   Q值     -->
+    <dimen name="equalizer_q_height">20dp</dimen>
+    <dimen name="equalizer_q_text_size">12sp</dimen>
+    <dimen name="equalizer_q_tv_martop">0dp</dimen>
+    <!--   频率  -->
+    <dimen name="equalizer_freq_height">20dp</dimen>
+    <dimen name="equalizer_freq_text_size">12sp</dimen>
+    <dimen name="equalizer_freq_tv_martop">0dp</dimen>
+    <!--   ID号  -->
+    <dimen name="equalizer_id_height">25dp</dimen>
+    <dimen name="equalizer_id_text_size">12sp</dimen>
+    <dimen name="equalizer_id_tv_martop">0dp</dimen>
+    <!--   复位EQ 增益  -->
+    <dimen name="equalizer_reset_height">15dp</dimen>
+    <dimen name="equalizer_reset_width">15dp</dimen>
+
+    <dimen name="equalizer_lefttab_height">20dp</dimen>
+    <dimen name="equalizer_lefttab_width">60dp</dimen>
+    <dimen name="equalizer_lefttab_text_size">12sp</dimen>
+    <dimen name="equalizer_lefttab_gain_text_size">12sp</dimen>
+    <!-- 混音    -->
+    <dimen name="mixer_b_text_size">13sp</dimen>
+    <dimen name="mixer_inch_name_width">75dp</dimen>
+    <dimen name="mixer_inch_name_height">25dp</dimen>
+    <dimen name="mixer_inch_text_size">15sp</dimen>
+    <dimen name="mixer_setbox_size">30dp</dimen>
+
+    <dimen name="mixer_inch_polar_width">40dp</dimen>
+    <dimen name="mixer_inch_polar_height">20dp</dimen>
+
+    <dimen name="mixer_button_incsub_size">25dp</dimen>
+    <dimen name="mixer_button_ch_val_width">80dp</dimen>
+    <dimen name="mixer_button_ch_val_height">30dp</dimen>
+    <dimen name="mixer_button_ch_val_text_size">18sp</dimen>
+    <dimen name="mixer_button_ch_polar_size">13dp</dimen>
+
+    <dimen name="mixer_valume_switch_size">30dp</dimen>
+    <!-- InputPage    -->
+    <dimen name="InputPage_Xover_text_size">13sp</dimen>
+    <dimen name="InputPage_Xover_Btnly_width">85dp</dimen>
+    <dimen name="InputPage_Xover_Btn_width">70dp</dimen>
+    <dimen name="InputPage_Xover_Btn_height">25dp</dimen>
+    <dimen name="InputPage_Xover_Btn_marginleft">20dp</dimen>
+    <dimen name="InputPage_Xover_Btn_index_sixe">15dp</dimen>
+
+    <!-- EQ Page -->
+    <dimen name="eq_page_id_width">55dp</dimen>
+    <dimen name="eq_page_id_height">20dp</dimen>
+
+    <dimen name="eq_page_gain_width">55dp</dimen>
+    <dimen name="eq_page_gain_height">20dp</dimen>
+    <dimen name="eq_page_q_width">55dp</dimen>
+    <dimen name="eq_page_q_height">20dp</dimen>
+    <dimen name="eq_page_freq_width">55dp</dimen>
+    <dimen name="eq_page_freq_height">20dp</dimen>
+    <dimen name="eq_page_b_text_size">14sp</dimen>
+    <dimen name="eq_page_item_ly_width">60dp</dimen>
+    <dimen name="eq_page_eqnum_text_size">12sp</dimen>
+    <dimen name="eq_page_gain_text_size">12sp</dimen>
+    <dimen name="eq_page_q_text_size">12sp</dimen>
+    <dimen name="eq_page_freq_text_size">12sp</dimen>
+
+    <dimen name="eq_page_eq_gain_width">60dp</dimen>
+    <dimen name="eq_page_eq_gain_height">300dp</dimen>
+
+    <dimen name="eq_page_eq_set_width">80dp</dimen>
+    <dimen name="eq_page_eq_set_height">28dp</dimen>
+    <!-- =================NET=================  -->
+    <dimen name="NetHomeImageView_size">105dp</dimen>
+    <dimen name="toning_home_knobview_point_size">3dp</dimen>
+    <dimen name="toning_home_knobview_line_width">2dp</dimen>
+    <dimen name="toning_soundfield_lp_size">30dp</dimen>
+    <dimen name="toning_home_knobview_size">120dp</dimen>
+    <dimen name="toning_home_knobview_subinc_size">40dp</dimen>
+    <dimen name="toning_home_knobviewsub_subinc_size">45dp</dimen>
+    <!-- =================NET=================  -->
+    <dimen name="layout_height_downlist">100dp</dimen>
+    <!-- ==================net_register================  -->
+    <dimen name="register_view_size">20dp</dimen>
+    <dimen name="register_view_marleft">15dp</dimen>
+    <dimen name="register_view_marleft_ls">20dp</dimen>
+
+    <!-- ==================net_loading================  -->
+    <dimen name="loading_view_size">20dp</dimen>
+    <dimen name="loading_view_marleft">10dp</dimen>
+    <dimen name="loading_view_marleft_ls">10dp</dimen>
+
+    <!-- ==================Seff ListView Item================  -->
+    <dimen name="seff_item_height">120dp</dimen>
+    <dimen name="seff_item_height2">120dp</dimen>
+    <dimen name="seff_item_ly_height">60dp</dimen>
+    <dimen name="_seff_item_height">-60dp</dimen>
+    <dimen name="seff_id_switcher_btn_width">35dp</dimen>
+    <dimen name="seff_id_switcher_btn_height">35dp</dimen>
+    <dimen name="seff_id_liseview_btn_size">25dp</dimen>
+
+    <dimen name="dowloadtitle_text_size">14sp</dimen>
+
+
+    <dimen name="login_user_dialog_height">50dp</dimen>
+    <dimen name="login_user_dialog_headpic_size">30dp</dimen>
+    <dimen name="login_user_dialog_delpic_size">25dp</dimen>
+
+
+    <!-- ==================Music================  -->
+    <dimen name="Music_Control_Btn_Size">40dp</dimen>
+    <dimen name="Music_Control_BtnMSg_Size">40dp</dimen>
+    <dimen name="Music_Control_Bar_height">65dp</dimen>
+    <dimen name="Music_Control_Bar_ImgSize">62dp</dimen>
+    <dimen name="Music_Control_Bar_ImgSize_radius">31dp</dimen>
+    <dimen name="Music_lrc_Bar_play_Size">70dp</dimen>
+    <dimen name="Music_lrc_Bar_play_radiusSize">35dp</dimen>
+
+    <dimen name="Music_lrc_Bar_pnext_Size">40dp</dimen>
+    <dimen name="Music_lrc_Bar_pnext_radiusSize">20dp</dimen>
+
+    <dimen name="Music_LRCPage_ImgSize">340dp</dimen>
+    <dimen name="Music_LRCPage_ImgSize_radius">170dp</dimen>
+
+    <dimen name="Music_Fileitem_ly_height">50dp</dimen>
+    <dimen name="Music_Musicitem_ly_height">55dp</dimen>
+    <dimen name="Music_Musicitem_ly_sel_height">72dp</dimen>
+
+    <dimen name="text_size_32">32.0dip</dimen>
+    <dimen name="text_size_31">31.0dip</dimen>
+    <dimen name="text_size_30">30.0dip</dimen>
+    <dimen name="text_size_29">29.0dip</dimen>
+    <dimen name="text_size_28">28.0dip</dimen>
+    <dimen name="text_size_27">27.0dip</dimen>
+    <dimen name="text_size_26">26.0dip</dimen>
+    <dimen name="text_size_25">25.0dip</dimen>
+    <dimen name="text_size_24">24.0dip</dimen>
+    <dimen name="text_size_23">23.0dip</dimen>
+    <dimen name="text_size_22">22.0dip</dimen>
+    <dimen name="text_size_21">21.0dip</dimen>
+    <dimen name="text_size_20">20.0dip</dimen>
+    <dimen name="text_size_19">19.0dip</dimen>
+    <dimen name="text_size_18">18.0dip</dimen>
+    <dimen name="text_size_17">17.0dip</dimen>
+    <dimen name="text_size_16">16.0dip</dimen>
+    <dimen name="text_size_15">15.0dip</dimen>
+    <dimen name="text_size_14">14.0dip</dimen>
+    <dimen name="text_size_13">13.0dip</dimen>
+    <dimen name="text_size_12">12.0dip</dimen>
+    <dimen name="text_size_11">11.0dip</dimen>
+    <dimen name="text_size_10">10.0dip</dimen>
+    <dimen name="text_size_9">9.0dip</dimen>
+    <dimen name="text_size_8">8.0dip</dimen>
+    <dimen name="text_size_7">7.0dip</dimen>
+    <dimen name="space_80">80.0dip</dimen>
+    <dimen name="space_30">30.0dip</dimen>
+    <dimen name="space_70">70.0dip</dimen>
+    <dimen name="space_32">32.0dip</dimen>
+    <dimen name="space_260">260.0dip</dimen>
+    <dimen name="space_280">280.0dip</dimen>
+    <dimen name="space_160">160.0dip</dimen>
+    <dimen name="space_33">33.0dip</dimen>
+    <dimen name="output_spk_type_height">40dp</dimen>
+    <dimen name="space_180">180.0dip</dimen>
+    <dimen name="space_250">250.0dip</dimen>
+
+    <dimen name="space_240">240.0dip</dimen>
+
+    <dimen name="space_35">35.0dip</dimen>
+    <dimen name="space_200">200.0dip</dimen>
+    <dimen name="space_340">340.0dip</dimen>
+    <dimen name="space_350">350.0dip</dimen>
+    <dimen name="space_40">40.0dip</dimen>
+    <dimen name="space_29">29.0dip</dimen>
+    <dimen name="space_28">28.0dip</dimen>
+    <dimen name="space_27">27.0dip</dimen>
+    <dimen name="space_26">26.0dip</dimen>
+    <dimen name="space_25">25.0dip</dimen>
+    <dimen name="space_24">24.0dip</dimen>
+    <dimen name="space_23">23.0dip</dimen>
+    <dimen name="space_22">22.0dip</dimen>
+    <dimen name="space_21">21.0dip</dimen>
+    <dimen name="space_20">20.0dip</dimen>
+    <dimen name="space_19">19.0dip</dimen>
+    <dimen name="space_18">18.0dip</dimen>
+    <dimen name="space_17">17.0dip</dimen>
+    <dimen name="space_16">16.0dip</dimen>
+    <dimen name="space_15">15.0dip</dimen>
+    <dimen name="space_17sp">17.0sp</dimen>
+    <dimen name="space_20sp">20.0sp</dimen>
+    <dimen name="space_14">14.0dip</dimen>
+    <dimen name="space_13">13.0dip</dimen>
+    <dimen name="space_12">12.0dip</dimen>
+    <dimen name="space_11">11.0dip</dimen>
+    <dimen name="space_10">10.0dip</dimen>
+    <dimen name="space_300">300.0dip</dimen>
+    <dimen name="space_295">295.0dip</dimen>
+    <dimen name="space_400">400.0dip</dimen>
+
+    <dimen name="space_9">9.0dip</dimen>
+    <dimen name="space_8">8.0dip</dimen>
+    <dimen name="space_7">7.0dip</dimen>
+    <dimen name="space_6">6.0dip</dimen>
+    <dimen name="space_5">5.0dip</dimen>
+    <dimen name="space_4">4.0dip</dimen>
+    <dimen name="space_3">3.0dip</dimen>
+    <dimen name="space_2">2.0dip</dimen>
+    <dimen name="space_1">1.0dip</dimen>
+    <dimen name="space_50">50.0dip</dimen>
+    <dimen name="space_60">60.0dip</dimen>
+    <dimen name="space_120">120.0dip</dimen>
+    <dimen name="space_100">100.0dip</dimen>
+    <dimen name="space_90">90.0dip</dimen>
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+    <dimen name="output_spk_btn_width">80dp</dimen>
+    <dimen name="output_spk_btn_hight">25dp</dimen>
+    <dimen name="ksw_md_thumb_solid_size">20dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_size">21dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_offset">2dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="output_spk_text_size">12sp</dimen>
+    <dimen name="output_spk_btn_marginSideLR">20dp</dimen>
+    <dimen name="output_spk_btn_marginTop">6dp</dimen>
+    <dimen name="output_spk_btn_marginTop2">50dp</dimen>
+    <dimen name="space_170">170dp</dimen>
+    <dimen name="dialog_radius">15.0dip</dimen>
+    <dimen name="menu_margin">17.0dip</dimen>
+    <dimen name="menu_margin_item">12.0dip</dimen>
+</resources>

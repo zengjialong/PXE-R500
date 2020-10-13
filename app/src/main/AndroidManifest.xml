@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chs.mt.pxe_r500">
+
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!--&lt;!&ndash;允许程序访问有关GSM网络信息&ndash;&gt;-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><!-- 允许程序访问Wi-Fi网络状态信息-->
+    <!--<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /><!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /><!--是改变WLAN状态的开关-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" /><!--允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /><!--允许程序修改全局音频设置-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /><!--允许一个程序打开窗口使用 TYPE_SYSTEM_ALERT，显示在其他所有程序的顶层-->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /><!--允许程序禁用键盘锁(Allows applications to disable the keyguard )-->
+
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" /><!--允许一个程序广播常用intents-->
+    <!--<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />-->
+    <!--<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />-->
+
+    <uses-permission android:name="android.permission.VIBRATE" /><!--允许访问振动设备-->
+
+    <!--Settings-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /><!--允许程序读取或写入系统设置-->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" /><!--允许程序设置壁纸-->
+    <!--<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />-->
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <!--<uses-permission android:name="com.chs.mt.dsp_play.permission.JPUSH_MESSAGE" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />-->
+    <uses-permission android:name="android.permission.INTERNET" /><!--允许程序打开网络套接字-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />&lt;!&ndash; 允许挂载和反挂载文件系统可移动存储&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+
+
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /><!--允许应用程序访问额外的位置提供命令-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /><!--允许程序改变网络连接状态-->
+    <!--android:name="com.chs.mt.pxe_x09.util.MyApplication"-->
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@drawable/chs_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:supportsRtl="true">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.chs.mt.pxe_r500.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name="com.chs.mt.pxe_r500.main.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 这个Activity是应用程序启动时第一个要运行的Activity(欢迎界面) -->
+        <activity
+            android:name="com.chs.mt.pxe_r500.main.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+
+            <!-- 上面这行代码作用是消除标题栏 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chs.mt.pxe_r500.main.StatementActivity"
+            android:screenOrientation="portrait" />
+        <!-- 网络用Activity -->
+        <activity
+            android:name="com.chs.mt.pxe_r500.main.SEff_DownloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chs.mt.pxe_r500.main.SEff_DownloadSearchActivity"
+            android:screenOrientation="portrait" />
+        <!-- BLE -->
+
+        <!-- 文件管理Activity -->
+        <activity android:name="com.chs.mt.pxe_r500.filemanger.BaseActivity" />
+        <activity
+            android:name="com.chs.mt.pxe_r500.main.LoadSeffFileActivity"
+            android:icon="@drawable/chs_logo"
+            android:label="@string/LoadDSPSEff"
+            android:logo="@drawable/chs_logo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <service
+            android:name="com.chs.mt.pxe_r500.service.ServiceOfCom"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.chs.mt.pxe_r500.bluetooth.ble.BluetoothLeService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.chs.mt.pxe_r500.main.BootActivity"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name="com.chs.mt.pxe_r500.main.MainTBTTActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported = "true"
+            >
+
+            <!--
+            portrait
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                 <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*"
+                    android:scheme="package" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*"
+                    android:scheme="https" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*"
+                    android:scheme="http" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*"
+                    android:scheme="content" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*"
+                    android:scheme="file" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*"
+                    android:scheme="rtsp" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*"
+                    android:scheme="mms" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="svawebsocket" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:pathPattern=".*\\.sohutv"
+                    android:scheme="file" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/mp4" />
+                <data android:mimeType="*/rmvb" />
+                <data android:mimeType="*/avi" />
+                <data android:mimeType="*/mkv" />
+                <data android:mimeType="audio/x-pn-realaudio" />
+                <data android:mimeType="video/x-ms-asf" />
+                <data android:mimeType="video/quicktime" />
+                <data android:mimeType="application/mpeg*" />
+                <data android:mimeType="application/vnd.rn-realmedia*" />
+                <data android:mimeType="application/3gpp*" />
+                <data android:mimeType="application/vnd.3gp*" />
+                <data android:mimeType="application/vnd.dvb*" />
+                <data android:mimeType="application/vnd.dolby*" />
+                <data android:mimeType="application/octet-stream" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="http" />
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="rtsp" />
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="file" />
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="content" />
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="mms" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sohuvideo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sva" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.START_SOHUTV" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BAIDU_START_SOHUTV" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:pathPattern=".*\\.sohutv"
+                    android:scheme="file" />
+            </intent-filter>
+        </activity>
+        <!--      android:label="@string/select_device"-->
+        <activity
+            android:name="com.chs.mt.pxe_r500.bluetooth.spp_ble.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.chs.mt.pxe_r500.Permissions.PermissionsActivity"
+            android:theme="@style/AppTheme.NoActionBar.Permissions" />
+        <activity
+            android:name="com.chs.mt.pxe_r500.main.Output_or_InputSpkTypeActivity"
+            android:theme="@android:style/Theme.Dialog"
+            />
+    </application>
+
+</manifest>

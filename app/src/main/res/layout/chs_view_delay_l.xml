@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" 
+	android:gravity="center" 
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/delay_item_layout_width"
+        android:layout_height="@dimen/delay_item_layout_height"
+		android:layout_gravity="center"
+		android:gravity="center"
+        android:orientation="horizontal">
+	    <RelativeLayout
+	        android:layout_width="@dimen/delay_item_val_width"
+		    android:layout_height="match_parent"
+			android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="vertical">
+
+			<com.chs.mt.pxe_r500.tools.LongCickButton
+                android:id="@+id/id_inc"
+				android:layout_width="@dimen/delay_item_SubInc_Size"
+				android:layout_height="@dimen/delay_item_SubInc_Size"
+				android:background="@drawable/chs_btn_setdinc_selector"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+				/>
+            <com.chs.mt.pxe_r500.tools.LongCickButton
+                android:id="@+id/id_sub"
+                android:layout_width="@dimen/delay_item_SubInc_Size"
+                android:layout_height="@dimen/delay_item_SubInc_Size"
+                android:background="@drawable/chs_btn_setdsub_selector"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                />
+            <Button
+                android:id="@+id/id_b_val"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/delay_item_val_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColor="@color/output_item_ch_name_color"
+                android:text="20.000"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                />
+
+	    </RelativeLayout>
+	    <RelativeLayout
+            android:layout_weight="1"
+	        android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="vertical">
+
+            <Button
+                android:id="@+id/id_b_spk"
+                android:layout_width="@dimen/delay_item_Speak_Size"
+                android:layout_height="@dimen/delay_item_Speak_Size"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:background="@drawable/chs_delayspk_r_normal"
+                android:maxLines="1"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                />
+	    </RelativeLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

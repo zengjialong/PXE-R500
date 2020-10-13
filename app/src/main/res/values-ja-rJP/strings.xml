@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+
+        <!--通用-->
+        <string name="cancel">Cancel</string>
+        <string name="Sure">OK</string>
+        <string name="dialog_title_Prompt">Tips</string>
+
+        <!--    免责申明-->
+        <string name="Statement">免責事項</string>
+        <string name="StatementCON">安全のため、運転中はアプリケーションおよびモバイル端末を操作しないでください。このアプリケーションは停車しているときにのみ操作してください。
+すべての法律に従い使用してください。</string>
+        <string name="agree">同意する</string>
+        <string name="disagree">同意しない</string>
+
+
+        <!--    主页-->
+        <string name="SetDelay">TCR</string>
+        <string name="Output">チャンネル</string>
+        <string name="Home">ホーム</string>
+        <string name="EQ">EQ</string>
+        <string name="Weight">ミックス</string>
+        <string name="Ad_InputSourceMain">メインソース</string>
+        <string name="Main_inputsource_select">メインソース選択</string>
+        <string name="Hi_Level">Hi.Level</string>
+        <string name="Bluetooth">Bluetooth</string>
+        <string name="AUX">AUX</string>
+        <string name="source_superposition">ミックス音源</string>
+        <string name="source_superposition_title">ミックス音源選択</string>
+        <string name="inputsource_decrement">メインソース音量割合</string>
+        <string name="OFF">OFF</string>
+        <string name="All_volume">マスター音量</string>
+        <string name="Technicians">プロモード</string>
+        <string name="common_user">簡易モード</string>
+        <string name="Sound_EFF1">プリセット1</string>
+        <string name="Sound_EFF2">プリセット2</string>
+        <string name="Sound_EFF3">プリセット3</string>
+        <string name="Sound_EFF4">プリセット4</string>
+        <string name="Sound_EFF5">プリセット5</string>
+        <string name="Sound_EFF6">プリセット6</string>
+        <string name="Sound_EFF">プリセット</string>
+        <!--菜单栏-->
+        <string name="Encryption">パスコードロック</string>
+        <string name="Register_SPassword">パスワード</string>
+        <string name="Encrying_data">データは暗号化されています</string>
+        <string name="Deciphering">ロック解除</string>
+        <string name="EncryptionClean">データ消去</string>
+        <string name="off_delay_time">シャットダウンディレイ</string>
+        <string name="SSM_ShareOpt">サウンドパラーメーター共有</string>
+        <string name="SSM_ShareMacMSG">共有するパラメーターを選択してください</string>
+        <string name="SSM_Single">現在のパラメーター</string>
+        <string name="SSM_Machine">パラメーター全体</string>
+        <string name="SSM_ShareMacTxt">*パラメーター全体を共有するには数分かかる場合があります</string>
+        <string name="SSM_Save">サウンドパラメーター保存</string>
+        <string name="SSM_FileName">ファイル名</string>
+        <string name="SSM_Detial">備考</string>
+        <string name="SSM_SaveMacMSG">*パラメーター全体の保存には数分かかる場合があります</string>
+        <string name="Menu_Open">ローカルファイル</string>
+        <string name="down_title_name">All</string>
+        <string name="seffitem_love">お気に入り</string>
+        <string name="down_title_Recently">履歴</string>
+        <string name="seffitem_reorder">ソート</string>
+        <string name="About">About</string>
+        <string name="app_name">PXE-R500</string>
+        <string name="Software_version">Software version：</string>
+        <string name="device_version">Device version：</string>
+
+        <!--通道-->
+        <string name="XOver">クロスオーバー</string>
+        <string name="HighPass">ハイパスフィルター</string>
+        <string name="H_P_F_Type">フィルタータイプ</string>
+        <string name="FilterLR">Link-Ril</string>
+        <string name="FilterBW">Butter-W</string>
+        <string name="FilterB">Bessel</string>
+        <string name="H_P_F_Freq">フィルター周波数</string>
+        <string name="H_P_F_Slope">フィルタースロープ</string>
+
+        <string name="Otc6dB">6dB/Oct</string>
+        <string name="Otc12dB">12dB/Oct</string>
+        <string name="Otc18dB">18dB/Oct</string>
+        <string name="Otc24dB">24dB/Oct</string>
+        <string name="Otc30dB">30dB/Oct</string>
+        <string name="Otc36dB">36dB/Oct</string>
+        <string name="Otc42dB">42dB/Oct</string>
+        <string name="Otc48dB">48dB/Oct</string>
+        <string name="LowPass">ローパスフィルター</string>
+        <string name="L_P_F_Type">フィルタータイプ</string>
+        <string name="L_P_F_Freq">フィルター周波数</string>
+        <string name="L_P_F_Slope">フィルタースロープ</string>
+        <string name="output_type">チャンネルタイプ</string>
+        <string name="output_title_type">チャンネルタイプ</string>
+        <string name="NULL">無効</string>
+        <string name="setpreposition">Front</string>
+        <string name="FL_Tweeter">FL-Tweeter</string>
+        <string name="FL_Midrange">FL-Midrange</string>
+        <string name="FL_M_WF">FL-Woofer</string>
+        <string name="FL_Woofer">FL-Subwoofer</string>
+        <string name="FL_Full">FL-Full range</string>
+        <string name="FR_Tweeter">FR-Tweeter</string>
+        <string name="FR_Midrange">FR-Midrange</string>
+        <string name="FR_M_WF">FR-Woofer</string>
+        <string name="FR_Woofer">FR-Subwoofer</string>
+        <string name="FR_Full">FR-Full range</string>
+        <string name="setpostposition">Rear</string>
+        <string name="RL_Tweeter">RL-Tweeter</string>
+        <string name="Input_type_26">RL-Midrange</string>
+        <string name="RL_Center_Woofer">RL-Woofer</string>
+        <string name="RL_Woofer">RL-Subwoofer</string>
+        <string name="RL_Full">RL-Full range</string>
+        <string name="RR_Tweeter">RR-Tweeter</string>
+        <string name="Input_type_27">RR-Midrange</string>
+        <string name="RR_Center_Woofer">RR-Woofer</string>
+        <string name="RR_Woofer">RR-Subwoofer</string>
+        <string name="RR_Full">RR-Full range</string>
+        <string name="Center">Center</string>
+        <string name="Front_Full_higt">FC-Tweeter</string>
+        <string name="Front_Full">FC-Midrange</string>
+        <string name="C_Rear_Woofer">RC-Tweeter</string>
+        <string name="RR_center">RC-Midrange</string>
+        <string name="Sub">Subwoofer</string>
+        <string name="L_Subweeter">L-Subwoofer</string>
+        <string name="R_Subweeter">R-Subwoofer</string>
+        <string name="Subweeter">Subsonic</string>
+        <string name="setrearout">Surround</string>
+        <string name="Input_type_28">L-Surround</string>
+        <string name="Input_type_29">R-Surround</string>
+        <string name="output_volume">チャンネル音量（dB）</string>
+        <string name="output_polar">チャンネル位相</string>
+        <string name="Polar_P">0°</string>
+        <string name="Polar_N">180°</string>
+        <string name="btn_Link">同期</string><!--联调按钮-->
+        <string name="title_Link">L/R 同期</string><!--联调弹窗标题-->
+        <string name="Opt_Channel_Link">チューニングモードを選択してください</string>
+        <string name="LeftToRight">EQをLからRにコピー</string>
+        <string name="RightToLeft">EQをRからLにコピー</string>
+        <string name="warning">警告</string>
+        <string name="NoLinkLR">L/Rのチャンネルを組み合わせることはできません！</string>
+        <string name="Locked">ロック</string>
+        <string name="Opt_Channel_Locked">出力設定をロックしますか？</string>
+        <string name="ISLock">出力設定をロックできません （設定がありません）</string>
+        <string name="Opt_Channel_unlock">出力設定をロック解除しますか？</string>
+        <string name="Reset">リセット</string>
+        <string name="Opt_Channel_Set">設定を消去する、もしくはデフォルトに戻すかを選択してください</string>
+        <string name="Emptied">消去</string>
+        <string name="Default">デフォルト</string>
+
+        <!--EQ-->
+        <string name="band">Band</string>
+        <string name="Frequency">周波数</string>
+        <string name="Q">Q值</string>
+        <string name="dB">ゲイン</string>
+        <string name="Work">バイパス</string>
+        <string name="Equalizer_ResetEQ">EQリセット</string>
+        <string name="ResetEQ">EQをリセットするとすべての値が消去されます。続行しますか？</string>
+        <string name="Bypass_EQ">Bypass EQ</string>
+        <string name="ByPassEQ">すべてのEQをバイパスしますか？</string>
+        <string name="Restore_EQ">EQ復元</string>
+        <string name="RecoverEQ">すべてのEQを復元しますか？</string>
+        <string name="PEQ_MODE">P-EQモード</string>
+        <string name="PEQ_change_GEQ">P-EQからG-EQに切り替えますか？\n（すべての設定は失われます）</string>
+        <string name="GEQ_MODE">G-EQモード</string>
+        <string name="GEQ_change_PEQ">G-EQからP-EQに切り替えますか？\n（すべての設定は失われます）</string>
+
+
+        <!--合频-->
+        <string name="Active_input">パッシブ入力</string>
+        <string name="Passive_input">アクティブ入力</string>
+        <string name="IN1">Hi.Level 1</string>
+        <string name="IN2">Hi.Level 2</string>
+        <string name="IN3">Hi.Level 3</string>
+        <string name="IN4">Hi.Level 4</string>
+        <string name="Mixer_AUX_1">AUX-L</string>
+        <string name="Mixer_AUX_2">AUX-R</string>
+        <string name="Mixer_IN15">BT-L</string>
+        <string name="Mixer_IN16">BT-R</string>
+
+        <!--延时界面 TCR-->
+        <string name="MS">ms</string>
+        <string name="CM">cm</string>
+        <string name="Inch">inch</string>
+        <string name="SetDelaySetting">TCR設定</string>
+        <string name="DelayGroup">ディレイグループ</string>
+        <string name="F_Sound">Front</string>
+        <string name="R_Sound">Rear</string>
+        <string name="S_Sound">Subwoofer</string>
+        <string name="A_Sound">All</string>
+        <string name="None_Sound">なし</string>
+
+
+        <!--其他提示语-->
+        <string name="spp_le_select_device">接続するデバイスを選択してください</string>
+        <string name="LoadDSPSEff">PXE-R500 加载DSP音效</string>
+        <string name="scanning">検索中&#8230;</string>
+        <string name="AutoConnect">自動接続</string>
+        <string name="spp_le_button_scan">新しいBluetoothデバイスをスキャンする</string>
+        <string name="off_line_mode">オフラインモード</string>
+        <string name="six_pwd">6桁のパスワードを入力してください</string>
+        <string name="SSM_FileNameMsg">ファイル名を入力してください</string>
+        <string name="Save_success">保存されました </string>
+        <string name="opt_User">現在のパラメータを使用しますか？</string>
+        <string name="DialogDelMsg">選択したファイルを削除しますか？</string>
+
+
+        <!--未核对过的中英文(自己去谷歌翻译的)-->
+        <string name="Mixer_HI_5">Hi.Level 5</string>
+        <string name="Mixer_HI_6">Hi.Level 6</string>
+        <string name="TriesToConnectTo">接続してみてください</string>
+        <string name="string_help_text">現在のアプリケーションには必要な権限がありません。 \ n \ n \ "設定\"-\ "権限\"-をクリックして、必要な権限を開いてください。 \ n \ n最後に戻るボタンを2回クリックして戻ります。</string>
+        <string name="quit">脱落</string>
+        <string name="settings">セットアップ</string>
+        <string name="help">助けて</string>
+        <string name="PasswordIncorrect">間違ったパスワード</string>
+        <string name="Upload_time">時間:</string>
+        <string name="SetFreq">頻度を設定</string>
+        <string name="SetEQ">Q値を設定</string>
+        <string name="SetGain">ゲインを設定</string>
+        <string name="ble_device_connecting">接続する&#8230;</string>
+        <string name="output_volume_1">チャンネルボリューム</string>
+        <string name="spp_le_Linking">接続する&#8230;</string>
+        <string name="Loading">読み込み中&#8230;</string>
+        <string name="Saving">節約&#8230;</string>
+        <string name="offline_link_bt">切断する</string>
+        <string name="SynDataSucess">データの同期が完了しました!</string>
+        <string name="device">デバイスのバージョン</string>
+        <string name="apps">ソフトウェアバージョン</string>
+        <string name="version_error">接続に失敗しました。バージョン番号が一致しません。更新してください!</string>
+        <string name="LinkOfMsg">接続が異常です。接続を終了してください！</string>
+
+        <string name="SSM_REC">効果音ファイルのデータを受信し、リストに保存しました。</string>
+        <string name="SSM_Title">音声データ更新</string>
+        <string name="SSM_MSG">効果音ファイルのデータを受信し、更新するかどうか？</string>
+        <string name="RefusedUseBluetooth">ユーザーはBluetoothの使用を拒否し、このソフトウェアを使用できません!</string>
+        <string name="quitLackPer">プライマリ権限がないため、実行できません!</string>
+        <string name="Again_exit">もう一度押すとプログラムを終了します</string>
+        <string name="ULSE_SAMENAME">別の名前を入力してください。このマシンにはすでにこのファイルがあります！</string>
+        <string name="second">二番目</string>
+        <string name="sameName_Tis">すでに同じマシンプリセットの効果音名を持っている!</string>
+        <string name="SetGroupName">请输入音效名称</string>
+        <string name="UpdateLocalFile">効果音名を入力してください!</string>
+        <string name="net_downed">ローカルサウンド</string>
+        <string name="delFailed">削除できませんでした!</string>
+        <string name="delSuccess">正常に削除されました!</string>
+        <string name="seffitem_haveSel">選択した</string>
+        <string name="opt_UserMac">このファイルを使用するかどうかにかかわらず、この操作はマシンのすべてのデータを上書きします!</string>
+        <string name="DialogDel">削除する</string>
+        <string name="LoadSEff_Fail">現在の効果音を更新できませんでした！</string>
+        <string name="OtcOFF">OFF</string>
+        <string name="SEFF_WRONG_MAC">モデルが一致しません！</string>
+        <string name="FileError">正しいサウンドファイルを開いてください!</string>
+        <string name="ShareError">共有エラー!</string>
+        <string name="please_connect_msg">オンラインで行ってください!</string>
+        <string name="Save_error">保存できませんでした! </string>
+        <string name="chs_name">广州市车厘子电子科技有限公司</string>
+        <string name="chs_tel">020&#8211;87282169</string>
+        <string name="chs_contacts">Mr Qing</string>
+        <string name="chs_web">www.chschs.com</string>
+        <string name="chs_weixin">CHSAUDIO</string>
+        <string name="chs_qq">QQ123456</string>
+        <string name="chs_briefing_en">The company was founded in 2013, is a focus on car DSP audio research and development program integrated company.</string>
+        <string name="chs_briefing_zh">公司成立于2013年，是一家专注于车载DSP音频研究开发的方案集成型公司。</string>
+        <string name="chs_brand">CHS</string>
+        <string name="share_seff">現在の効果音を共有する</string>
+
+
+
+        <string name="recall">転送</string>
+        <string name="save">保存する</string>
+        <string name="sound_operation">プリセット操作</string>
+        <string name="unlocked">ロックされた</string>
+        <string name="opt_delete">この操作により、このデータグループがクリアされます</string>
+        <string name="seffitem_apply">応用</string>
+        <string name="seffitem_share">共有する</string>
+        <string name="delay_unit">遅延ユニット</string>
+    </resources>

@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chs_ly_aux_input_top_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_txt_out_name_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_30"
+                android:layout_gravity="center_vertical"
+
+                android:gravity="center"
+                android:text="@string/output_type"
+                android:layout_marginLeft="@dimen/space_5"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/id_exit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/chs_dialog_exit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="370dp"
+            android:background="@drawable/chs_ly_aux_input_img_normal"
+            >
+
+
+            <com.chs.mt.pxe_r500.tools.MyScrollView
+                android:id="@+id/scv"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/title5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:background="@drawable/chs_btn_output_spk"
+                            android:gravity="center"
+                            android:text="@string/NULL"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/id_txt_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/NULL"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/title0"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:background="@drawable/chs_btn_output_spk"
+                            android:gravity="center"
+                            android:text="@string/setpreposition"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/id_txt_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/FL_Tweeter"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/FL_Midrange"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/id_txt_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+                        <TextView
+                            android:id="@+id/id_txt_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/FL_M_WF"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/id_txt_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/FL_Woofer"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/id_txt_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/FL_Full"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/FR_Tweeter"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+
+                            android:text="@string/FR_Midrange"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/id_txt_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+                        <TextView
+                            android:id="@+id/id_txt_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/FR_M_WF"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/FR_Woofer"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:text="@string/FR_Full"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:background="@drawable/chs_btn_output_spk"
+                            android:gravity="center"
+                            android:text="@string/setpostposition"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/id_txt_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RL_Tweeter"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_25"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/Input_type_26"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+
+
+                        <TextView
+                            android:id="@+id/id_txt_30"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RL_Center_Woofer"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RL_Woofer"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RL_Full"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/id_txt_16"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RR_Tweeter"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_26"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/Input_type_27"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+                        <TextView
+                            android:id="@+id/id_txt_31"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RR_Center_Woofer"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_17"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RR_Woofer"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/id_txt_18"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RR_Full"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/title2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:background="@drawable/chs_btn_output_spk"
+                            android:gravity="center"
+                            android:text="@string/Center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/id_txt_19"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/Front_Full_higt"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:id="@+id/id_txt_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/Front_Full"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_21"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/C_Rear_Woofer"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_29"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/RR_center"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+
+
+
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/title3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:background="@drawable/chs_btn_output_spk"
+                            android:gravity="center"
+                            android:text="@string/Sub"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/id_txt_22"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="@dimen/space_5"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/L_Subweeter"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_23"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/R_Subweeter"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_24"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/Subweeter"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/title4"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:background="@drawable/chs_btn_output_spk"
+                            android:gravity="center"
+                            android:text="@string/setrearout"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/id_txt_27"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                         android:background="@drawable/button_style"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/Input_type_28"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/id_txt_28"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/output_spk_type_height"
+                            android:adjustViewBounds="true"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:gravity="center"
+                            android:scaleType="fitCenter"
+                            android:text="@string/Input_type_29"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.chs.mt.pxe_r500.tools.MyScrollView>
+
+            <TextView
+                android:id="@+id/id_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/output_spk_type_height"
+                android:background="@drawable/chs_btn_output_spk"
+                android:gravity="center"
+                android:text="@string/NULL"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

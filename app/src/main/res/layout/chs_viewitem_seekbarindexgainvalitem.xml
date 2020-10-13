@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:KNOB="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" 
+	android:gravity="center" 
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:orientation="vertical">
+		<!-- 音量 -->
+		<TextView
+			android:id="@+id/id_tv_val"
+			android:layout_width="match_parent"
+			android:layout_height="22dp"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:clickable="false"
+			android:background="@null"
+			android:maxLines="1"
+			android:textColor="@color/seekbarindexvalitem_index_color"
+			android:text="60"
+			android:textSize="13sp"
+			android:textAllCaps="false"
+			/>
+
+		<RelativeLayout
+			android:layout_width="100dp"
+			android:layout_height="90dp"
+            android:layout_centerInParent="true"
+			android:orientation="vertical">
+
+            <com.chs.mt.pxe_r500.tools.KnobView_PicTwo
+                android:id="@+id/id_kv_sb"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/chs_master_vol_indicator"
+                />
+			<!-- 音量 -->
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentBottom="true"
+				android:clickable="false"
+				android:background="@null"
+				android:maxLines="1"
+				android:textColor="@color/seekbarindexvalitem_index_color"
+				android:text="Min"
+				android:textSize="8sp"
+				android:textAllCaps="false"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true"
+				android:clickable="false"
+				android:background="@null"
+				android:maxLines="1"
+				android:textColor="@color/seekbarindexvalitem_index_color"
+				android:text="Max"
+				android:textSize="8sp"
+				android:textAllCaps="false"
+				/>
+		</RelativeLayout>
+		<!-- 标识 -->
+		<TextView
+			android:id="@+id/id_tv_index"
+			android:layout_width="80dp"
+			android:layout_height="25dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:clickable="false"
+			android:background="@null"
+			android:maxLines="1"
+			android:textColor="@color/seekbarindexvalitem_index_color"
+			android:text="标识"
+			android:textSize="13sp"
+			android:textAllCaps="false"
+			/>
+	</RelativeLayout>
+
+
+</RelativeLayout>

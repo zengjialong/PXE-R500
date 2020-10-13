@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mhsb_seekbar="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/id_llyout_freq_dialog_seekbar"
+	android:layout_width="300dp"
+	android:layout_height="300dp"
+	android:background="@color/color_dialog"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="300dp"
+		android:layout_height="160dp"
+		android:background="@drawable/chs_dialog_bg"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/id_text_msg"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+				android:text="20Hz"
+				android:textColor="@color/color_dialogText"
+				android:layout_centerInParent="true"
+				android:textAllCaps="false"
+				android:textSize="20sp"
+				android:gravity="center"/>
+
+			<Button
+				android:id="@+id/id_chs_dialog_exit"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginRight="10dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:background="@drawable/chs_dialog_exit"
+				android:textAllCaps="false"
+				android:textSize="13sp"/>
+
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+			android:orientation="horizontal">
+            <com.chs.mt.pxe_r500.tools.LongCickButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/id_b_freq_dialog_sub"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textAllCaps="false"
+                android:background="@drawable/chs_btn_sub_selector"
+                android:scaleType="fitCenter" />
+			<com.chs.mt.pxe_r500.tools.MHS_Num_SeekBar
+				android:id="@+id/id_freq_dialog_seekbar"
+                android:layout_width="200dp"
+				android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+				mhsb_seekbar:mhs_numtext_size="15sp"
+				mhsb_seekbar:mhs_numtext_color="#FFffffff"
+				android:thumb="@drawable/chs_seekbar_thumb"
+                mhsb_seekbar:mhs_progress_width="3dp"
+				mhsb_seekbar:mhs_progress_background_color="@color/delay_seekbar_background_color"
+				mhsb_seekbar:mhs_progress_color="@color/delay_seekbar_progress_color"
+				/>
+            <com.chs.mt.pxe_r500.tools.LongCickButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/id_b_freq_dialog_inc"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="false"
+                android:background="@drawable/chs_btn_inc_selector"
+                android:scaleType="fitCenter" />
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

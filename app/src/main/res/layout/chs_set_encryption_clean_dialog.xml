@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/id_llyout_dialog_set_encryption_clean"
+	android:layout_width="@dimen/dialog_width"
+	android:layout_height="180dp"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:layout_width="@dimen/dialog_width"
+		android:layout_height="30dp"
+		android:layout_gravity="center"
+		android:background="@drawable/chs_ly_aux_input_top_bg"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/id_b_set_title"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_marginLeft="@dimen/space_10"
+			android:gravity="center_vertical"
+			android:maxLines="1"
+			android:text="SetEncryptionClean"
+			android:textColor="@color/text_color_white"
+			android:textSize="15sp" />
+		<ImageView
+			android:id="@+id/id_btn_exit"
+			android:layout_width="@dimen/space_30"
+			android:layout_height="@dimen/space_30"
+			android:layout_marginRight="@dimen/space_5"
+			android:layout_alignParentRight="true"
+			android:visibility="gone"
+			android:src="@drawable/chs_dialog_exit" />
+
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:background="@drawable/chs_ly_aux_input_img_normal"
+		android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/id_llyout_set_encryption_clean"
+		android:layout_width="@dimen/dialog_width"
+		android:layout_height="80dp"
+		android:layout_marginTop="10dp"
+		android:layout_gravity="center"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/id_b_tv_set_encryption_clean"
+			android:layout_width="260dp"
+			android:layout_height="50dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="20dp"
+			android:text="EncryptionCleanSet"
+			android:textSize="15sp"
+			android:textColor="@color/text_color_white" />
+
+	</LinearLayout>
+
+
+		<LinearLayout
+		android:id="@+id/id_llyout_encryption"
+		android:layout_width="@dimen/delay_item_llyout_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="0dp"
+		android:gravity="center"
+		android:orientation="horizontal">
+			<View
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:background="@null"
+				/>
+
+			<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:id="@+id/id_b_encryption_clean_cancle"
+			android:layout_width="@dimen/space_70"
+			android:layout_height="28dp"
+			android:textAllCaps="false"
+			android:background="@drawable/chs_dialog_btn_normal"
+			android:text="@string/cancel"
+			android:textColor="@color/text_color_white"
+			android:textSize="12sp" />
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:id="@+id/id_b_encryption_clean"
+			android:layout_width="@dimen/space_70"
+			android:layout_height="28dp"
+			android:layout_marginLeft="@dimen/space_10"
+			android:layout_marginRight="@dimen/space_10"
+			android:textAllCaps="false"
+			android:background="@drawable/chs_dialog_btn_normal"
+			android:text="@string/EncryptionClean"
+			android:textColor="@color/text_color_white"
+			android:textSize="12sp" />
+	</LinearLayout>
+	<TextView
+		android:id="@+id/id_text_dbs"
+		android:layout_width="wrap_content"
+		android:layout_height="20dp"/>
+	</LinearLayout>
+</LinearLayout>

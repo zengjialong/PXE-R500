@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+
+    <!--通用-->
+    <string name="cancel">Cancel</string>
+    <string name="Sure">OK</string>
+    <string name="dialog_title_Prompt">提示</string>
+
+    <!--    免责申明-->
+    <string name="Statement">Disclaimer</string>
+    <string name="StatementCON">Do not operate this application or any handheld device while driving. This application is not to be used while driving. Only operate this application when the vehicle is parked. Always obey all traffic laws.</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+
+
+    <!--    主页-->
+    <string name="SetDelay">TCR</string>
+    <string name="Output">Channel</string>
+    <string name="Home">Home</string>
+    <string name="EQ">EQ</string>
+    <string name="Weight">Mix</string>
+    <string name="Ad_InputSourceMain">Main source</string>
+    <string name="Main_inputsource_select">Main source selection</string>
+    <string name="Hi_Level">Hi.Level</string>
+    <string name="Bluetooth">Bluetooth</string>
+    <string name="AUX">AUX</string>
+    <string name="source_superposition">Mix source</string>
+    <string name="source_superposition_title">Mix source selection</string>
+    <string name="inputsource_decrement">Main source attenuation</string>
+    <string name="OFF">OFF</string>
+    <string name="All_volume">Master Vol</string>
+    <string name="Technicians">Pro User</string>
+    <string name="common_user">General User</string>
+    <string name="Sound_EFF1">Preset 1</string>
+    <string name="Sound_EFF2">Preset 2</string>
+    <string name="Sound_EFF3">Preset 3</string>
+    <string name="Sound_EFF4">Preset 4</string>
+    <string name="Sound_EFF5">Preset 5</string>
+    <string name="Sound_EFF6">Preset 6</string>
+    <string name="Sound_EFF">Preset\t</string>
+    <!--菜单栏-->
+    <string name="Encryption">Encryption</string>
+    <string name="Register_SPassword">Password</string>
+    <string name="Encrying_data">Data is encrypted</string>
+    <string name="Deciphering">Decryption</string>
+    <string name="EncryptionClean">Clear</string>
+    <string name="off_delay_time">Shutdown delay</string>
+    <string name="SSM_ShareOpt">Share</string>
+    <string name="SSM_ShareMacMSG">Please choose the sound effect to share from device.</string>
+    <string name="SSM_Single">Single setting</string>
+    <string name="SSM_Machine">Entire setting</string>
+    <string name="SSM_ShareMacTxt">Sharing the entire sound effects may take several minutes.</string>
+    <string name="SSM_Save">Save</string>
+    <string name="SSM_FileName">File Name</string>
+    <string name="SSM_Detial">Details</string>
+    <string name="SSM_SaveMacMSG">Saving the entire sound effects may take several minutes.</string>
+    <string name="Menu_Open">Files</string>
+    <string name="down_title_name">All</string>
+    <string name="seffitem_love">Love</string>
+    <string name="down_title_Recently">Recent</string>
+    <string name="seffitem_reorder">Order</string>
+    <string name="About">About</string>
+    <string name="app_name">PXE-R500</string>
+    <string name="Software_version">Software version:</string>
+    <string name="device_version">Device version:</string>
+
+    <!--通道-->
+    <string name="XOver">Crossover</string>
+    <string name="HighPass">H.P.F.</string>
+    <string name="H_P_F_Type">H.P.F-Type</string>
+    <string name="FilterLR">Link-Ril</string>
+    <string name="FilterBW">Butter-W</string>
+    <string name="FilterB">Bessel</string>
+    <string name="H_P_F_Freq">H.P.F-Freq.</string>
+    <string name="H_P_F_Slope">H.P.F-Slope</string>
+
+    <string name="Otc6dB">6dB/Oct</string>
+    <string name="Otc12dB">12dB/Oct</string>
+    <string name="Otc18dB">18dB/Oct</string>
+    <string name="Otc24dB">24dB/Oct</string>
+    <string name="Otc30dB">30dB/Oct</string>
+    <string name="Otc36dB">36dB/Oct</string>
+    <string name="Otc42dB">42dB/Oct</string>
+    <string name="Otc48dB">48dB/Oct</string>
+
+    <string name="LowPass">L.P.F.</string>
+    <string name="L_P_F_Type">L.P.F.-Type</string>
+    <string name="L_P_F_Freq">L.P.F.-Freq</string>
+    <string name="L_P_F_Slope">L.P.F.-Slope</string>
+    <string name="output_type">Channel type</string>
+    <string name="output_title_type">channel type</string>
+    <string name="NULL">Null</string>
+    <string name="setpreposition">Front</string>
+    <string name="FL_Tweeter">FL-Tweeter</string>
+    <string name="FL_Midrange">FL-Midrange</string>
+    <string name="FL_M_WF">FL-Woofer</string>
+    <string name="FL_Woofer">FL-Subwoofer</string>
+    <string name="FL_Full">FL-Full-range</string>
+    <string name="FR_Tweeter">FR-Tweeter</string>
+    <string name="FR_Midrange">FR-Midrange</string>
+    <string name="FR_M_WF">FR-Woofer</string>
+    <string name="FR_Woofer">FR-Subwoofer</string>
+    <string name="FR_Full">FR-Full-range</string>
+    <string name="setpostposition">Rear</string>
+    <string name="RL_Tweeter">RL-Tweeter</string>
+    <string name="Input_type_26">RL-Midrange</string>
+    <string name="RL_Center_Woofer">RL-Woofer</string>
+    <string name="RL_Woofer">RL-Subwoofer</string>
+    <string name="RL_Full">RL-Full-range</string>
+    <string name="RR_Tweeter">RR-Tweeter</string>
+    <string name="Input_type_27">RR-Midrange</string>
+    <string name="RR_Center_Woofer">RR-Woofer</string>
+    <string name="RR_Woofer">RR-Subwoofer</string>
+    <string name="RR_Full">RR-Full-range</string>
+    <string name="Center">Center</string>
+    <string name="Front_Full_higt">FC-Tweeter</string>
+    <string name="Front_Full">FC-Midrange</string>
+    <string name="C_Rear_Woofer">RC-Tweeter</string>
+    <string name="RR_center">RC-Midrange</string>
+    <string name="Sub">Subwoofer</string>
+    <string name="L_Subweeter">L-Subwoofer</string>
+    <string name="R_Subweeter">R-Subwoofer</string>
+    <string name="Subweeter">Subsonic</string>
+    <string name="setrearout">Surround</string>
+    <string name="Input_type_28">L-Surround</string>
+    <string name="Input_type_29">R-Surround</string>
+    <string name="output_volume">Channel Vol （dB）</string>
+    <string name="output_polar">Channel Phase</string>
+    <string name="Polar_P">0°</string>
+    <string name="Polar_N">180°</string>
+    <string name="btn_Link">Sync</string><!--联调按钮-->
+    <string name="title_Link">L/R Sync tuning</string><!--联调弹窗标题-->
+    <string name="Opt_Channel_Link">Please select tuning mode</string>
+    <string name="LeftToRight">Copy EQ from left to right</string>
+    <string name="RightToLeft">Copy EQ from right to left</string>
+    <string name="warning">Warning</string>
+    <string name="NoLinkLR">No L/R Sync tuning!</string>
+    <string name="Locked">Lock</string>
+    <string name="Opt_Channel_Locked">Are you sure you wan\'t to lock the output configuration?</string>
+    <string name="ISLock">Output configuration could not be locked!（All output configuration is empty）</string>
+    <string name="Opt_Channel_unlock">Are you sure you wan\'t to unlock the output configuration?</string>
+    <string name="Reset">Reset</string>
+    <string name="Opt_Channel_Set">Please select to clear or restore the default output configuration</string>
+    <string name="Emptied">Clear</string>
+    <string name="Default">Default</string>
+
+    <!--EQ-->
+    <string name="band">Band</string>
+    <string name="Frequency">Freq.</string>
+    <string name="Q">Q Value</string>
+    <string name="dB">Gain</string>
+    <string name="Work">Bypass</string>
+    <string name="Equalizer_ResetEQ">Reset EQ</string>
+    <string name="ResetEQ">Resetting the EQ will erase all settings,Do you want to continue？</string>
+    <string name="Bypass_EQ">Bypass EQ</string>
+    <string name="ByPassEQ">Are you sure you wan\'t to Bypass all EQ?</string>
+    <string name="Restore_EQ">Restore EQ</string>
+    <string name="RecoverEQ">Are you sure you wan\'t to Restore all EQ?</string>
+    <string name="PEQ_MODE">P.EQ Mode</string>
+    <string name="PEQ_change_GEQ">Are you sure you wan\'t to switch from P.EQ to G.EQ?\n(All settings will be lost)</string>
+    <string name="GEQ_MODE">G.EQ Mode</string>
+    <string name="GEQ_change_PEQ">Are you sure you wan\'t to switch from G.EQ to P.EQ?\n(All settings will be lost)</string>
+
+
+    <!--合频-->
+    <string name="Active_input">Passive input</string>
+    <string name="Passive_input">Active input</string>
+    <string name="IN1">Hi.Level 1</string>
+    <string name="IN2">Hi.Level 2</string>
+    <string name="IN3">Hi.Level 3</string>
+    <string name="IN4">Hi.Level 4</string>
+    <string name="Mixer_AUX_1">AUX-L</string>
+    <string name="Mixer_AUX_2">AUX-R</string>
+    <string name="Mixer_IN15">BT-L</string>
+    <string name="Mixer_IN16">BT-R</string>
+
+    <!--延时界面 TCR-->
+    <string name="MS">ms</string>
+    <string name="CM">cm</string>
+    <string name="Inch">inch</string>
+    <string name="SetDelaySetting">TCR setting</string>
+    <string name="DelayGroup">Delay group</string>
+    <string name="F_Sound">Front</string>
+    <string name="R_Sound">Rear</string>
+    <string name="S_Sound">Subwoofer</string>
+    <string name="A_Sound">All</string>
+    <string name="None_Sound">None</string>
+
+
+    <!--其他提示语-->
+    <string name="spp_le_select_device">Select a device to connect</string>
+    <string name="LoadDSPSEff">PXE-R500 加载DSP音效</string>
+    <string name="scanning">Searching&#8230;</string>
+    <string name="AutoConnect">Auto Connect</string>
+    <string name="spp_le_button_scan">Scan for new Bluetooth devices</string>
+    <string name="off_line_mode">Offline mode</string>
+    <string name="six_pwd">Please enter the password of 6 characters</string>
+    <string name="SSM_FileNameMsg">Please enter the file name</string>
+    <string name="Save_success">Save successfully! </string>
+    <string name="opt_User">Are you sure you wan\'t to use the current sound effect?</string>
+    <string name="DialogDelMsg">Are you sure you wan\'t to delete the selected file?</string>
+
+
+
+    <!--未核对过的中英文-->
+    <string name="Mixer_HI_5">Hi.Level 5</string>
+    <string name="Mixer_HI_6">Hi.Level 6</string>
+    <string name="TriesToConnectTo">Try to connect</string>
+    <string name="string_help_text">The current application lacks necessary permissions.\n\nPlease click\"Set up\"-\"Authority\"-Open required permissions。\n\nFinally, click the back button twice to return.</string>
+    <string name="quit">drop out</string>
+    <string name="settings">Set up</string>
+    <string name="help">help</string>
+    <string name="PasswordIncorrect">wrong password</string>
+    <string name="Upload_time">time:</string>
+    <string name="SetFreq">Set frequency</string>
+    <string name="SetEQ">Set Q value</string>
+    <string name="SetGain">Set gain</string>
+    <string name="ble_device_connecting">connecting&#8230;</string>
+    <string name="output_volume_1">Channel volume</string>
+    <string name="spp_le_Linking">connecting&#8230;</string>
+    <string name="Loading">Loading&#8230;</string>
+    <string name="Saving">saving&#8230;</string>
+    <string name="offline_link_bt">Disconnect</string>
+    <string name="SynDataSucess">Data synchronization completed!</string>
+    <string name="device">Device version</string>
+    <string name="apps">Software version</string>
+    <string name="version_error">Connection failed, version number does not match, please update!</string>
+    <string name="LinkOfMsg">The connection is abnormal, exit the connection！</string>
+
+    <string name="SSM_REC">A sound effect file data has been received and saved in the list。</string>
+    <string name="SSM_Title">Sound data update</string>
+    <string name="SSM_MSG">Receive a sound effect file data, whether to update it？</string>
+    <string name="RefusedUseBluetooth">The user refuses to use Bluetooth and cannot use this software!</string>
+    <string name="quitLackPer">Lack of primary permissions, unable to run!</string>
+    <string name="Again_exit">Press again to exit the program</string>
+    <string name="ULSE_SAMENAME">Please enter another name, this machine already has this file!</string>
+    <string name="second">second</string>
+    <string name="sameName_Tis">The same machine preset sound effect name already exists!</string>
+    <string name="SetGroupName">Please enter the sound effect name</string>
+    <string name="UpdateLocalFile">Local data has been updated!</string>
+    <string name="net_downed">Local sound</string>
+    <string name="delFailed">failed to delete!</string>
+    <string name="delSuccess">successfully deleted!</string>
+    <string name="seffitem_haveSel">selected</string>
+    <string name="opt_UserMac">Whether to use this file, this operation will overwrite all data of this machine!</string>
+    <string name="DialogDel">delete</string>
+    <string name="LoadSEff_Fail">Failed to update the current sound effect!</string>
+    <string name="OtcOFF">OFF</string>
+    <string name="SEFF_WRONG_MAC">The model does not match!</string>
+    <string name="FileError">Please open the correct sound effect file!</string>
+    <string name="ShareError">Sharing error!</string>
+    <string name="please_connect_msg">Please do it online!</string>
+    <string name="Save_error">Save failed! </string>
+    <string name="chs_name">广州市车厘子电子科技有限公司</string>
+    <string name="chs_tel">020&#8211;87282169</string>
+    <string name="chs_contacts">Mr Qing</string>
+    <string name="chs_web">www.chschs.com</string>
+    <string name="chs_weixin">CHSAUDIO</string>
+    <string name="chs_qq">QQ123456</string>
+    <string name="chs_briefing_en">The company was founded in 2013, is a focus on car DSP audio research and development program integrated company.</string>
+    <string name="chs_briefing_zh">公司成立于2013年，是一家专注于车载DSP音频研究开发的方案集成型公司。</string>
+    <string name="chs_brand">CHS</string>
+    <string name="share_seff">Share current sound effects</string>
+
+    <string name="recall">Recall</string>
+    <string name="save">Save</string>
+    <string name="sound_operation">Preset operation</string>
+    <string name="unlocked">unlock</string>
+    <string name="opt_delete">This operation will clear this group of data</string>
+    <string name="seffitem_apply">Apply</string>
+    <string name="seffitem_share">Share </string>
+    <string name="delay_unit">Delay unit</string>
+</resources>

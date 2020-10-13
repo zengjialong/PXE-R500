@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_120"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_ly_item_seff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:background="@color/dowload_bg_color"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/seff_id_item_sel"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:background="@drawable/chs_seff_sel_normal"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/seff_id_title_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="一片艳阳天"
+                    android:textAllCaps="false"
+                    android:textColor="#FFffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/seff_id_filetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="SF"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dowloaditem_color_normal"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/seff_id_title_tv_user"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:text="作者"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dowloaditem_color_normal"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/seff_id_title_tv_upload_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Upload_time"
+                    android:textAllCaps="false"
+                    android:textColor="#FF787c80"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/id_iv_favorite"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:background="@drawable/chs_seff_favorite"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/id_iv_love"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:background="@drawable/chs_seff_love"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:id="@+id/seff_id_switcher_btn"
+            android:layout_width="@dimen/seff_id_switcher_btn_width"
+            android:layout_height="@dimen/seff_id_switcher_btn_height"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/chs_seff_menu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seff_id_panel_li"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seff_item_ly_height"
+        android:background="#57A1FC"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/seff_id_panel_li1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/seff_item_ly_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/id_ly_seff_list_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_b_seff_list_1"
+                    android:layout_width="@dimen/seff_id_liseview_btn_size"
+                    android:layout_height="@dimen/seff_id_liseview_btn_size"
+                    android:background="@drawable/chs_seff_apply"
+                    android:clickable="false"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/id_tv_seff_list_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:background="#00000000"
+                    android:text="@string/seffitem_apply"
+                    android:textAllCaps="false"
+                    android:textColor="#FFffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/id_ly_seff_list_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_b_seff_list_2"
+                    android:layout_width="@dimen/seff_id_liseview_btn_size"
+                    android:layout_height="@dimen/seff_id_liseview_btn_size"
+                    android:background="@drawable/chs_seff_share"
+                    android:clickable="false"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/id_tv_seff_list_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="@string/seffitem_share"
+                    android:textAllCaps="false"
+                    android:textColor="#FFffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_seff_list_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+              >
+
+                <Button
+                    android:id="@+id/id_b_seff_list_3"
+                    android:layout_width="@dimen/seff_id_liseview_btn_size"
+                    android:layout_height="@dimen/seff_id_liseview_btn_size"
+                    android:background="@drawable/chs_seff_love"
+                    android:clickable="false"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/id_tv_seff_list_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#00000000"
+                    android:text="@string/seffitem_love"
+                    android:textAllCaps="false"
+                    android:textColor="#FFffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_seff_list_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+               >
+
+                <Button
+                    android:id="@+id/id_b_seff_list_4"
+                    android:layout_width="@dimen/seff_id_liseview_btn_size"
+                    android:layout_height="@dimen/seff_id_liseview_btn_size"
+                    android:background="@drawable/chs_seff_love"
+                    android:clickable="false"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/id_tv_seff_list_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#00000000"
+                    android:text="@string/seffitem_love"
+                    android:textAllCaps="false"
+                    android:textColor="#FFffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_seff_list_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_b_seff_list_5"
+                    android:layout_width="@dimen/seff_id_liseview_btn_size"
+                    android:layout_height="@dimen/seff_id_liseview_btn_size"
+                    android:background="@drawable/chs_seff_delete"
+                    android:clickable="false"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/id_tv_seff_list_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#00000000"
+                    android:text="@string/DialogDel"
+                    android:textAllCaps="false"
+                    android:textColor="#FFffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/id_ly_seff_list_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_b_seff_list_6"
+                    android:layout_width="@dimen/seff_id_liseview_btn_size"
+                    android:layout_height="@dimen/seff_id_liseview_btn_size"
+                    android:background="@drawable/chs_seff_details"
+                    android:clickable="false"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/id_tv_seff_list_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#00000000"
+                    android:text="@string/SSM_Detial"
+                    android:textAllCaps="false"
+                    android:textColor="#FFffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

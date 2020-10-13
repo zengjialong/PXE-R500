@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nullc"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="@dimen/space_80"
+        android:layout_height="@dimen/space_30"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="周日09-20"
+        android:textColor="#ffffff"
+        android:textSize="14dp" />
+</LinearLayout>

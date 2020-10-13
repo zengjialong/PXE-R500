@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" 
+	android:gravity="center" 
+    android:id="@+id/id_llyout_home_bottom_bar"
+    android:orientation="vertical" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:orientation="vertical">
+		<!-- -->
+		<Button
+			android:id="@+id/id_v_home_mid_image0"
+			android:layout_width="@dimen/usergroup_vbtn_layoutwidth"
+			android:layout_height="@dimen/usergroup_vbtn_layoutwidth"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:clickable="false"
+			android:background="@drawable/chs_landing_userpic"
+			/>
+		<!--  -->
+		<Button
+			android:id="@+id/id_b_home_mid_name0"
+			android:layout_width="wrap_content"
+			android:layout_height="80dp"
+			android:layout_marginTop="0dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:clickable="false"
+			android:background="@null"
+			android:maxLines="2"
+			android:textColor="@color/user_group_set_text_color_normal"
+			android:text="Seff"
+			android:textSize="22sp"
+			android:textStyle="bold"
+			android:textAllCaps="false"
+			/>
+	</LinearLayout>
+</LinearLayout>

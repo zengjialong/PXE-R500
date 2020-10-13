@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dowload_bg_color"
+    >   
+	<ListView 
+	    android:id="@+id/seff_download_listview_favorite"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:listSelector="@android:color/transparent"
+	    android:dividerHeight="0.7dip"
+	    android:choiceMode="none"
+	    android:divider="#55333333"
+	    android:fillViewport="true"
+		android:overScrollMode="never"
+		android:scrollbars="none"
+		android:fadingEdge="none"
+	    android:orientation="vertical" >
+	
+	</ListView>
+</LinearLayout>

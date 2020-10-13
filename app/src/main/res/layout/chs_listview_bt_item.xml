@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/id_ly"
+	>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/id_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="FileName"
+                android:textColor="@color/bluetoothlistName_color_normal"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                />
+            <TextView
+                android:id="@+id/id_id"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/bluetoothlistID_color_normal"
+                android:text="unknown"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_tvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            >
+            <!--FF4194F2-->
+            <TextView
+                android:id="@+id/id_tvt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:textColor="#FF4194F2"
+                android:text="(5S)"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right|center_vertical"
+                android:textColor="#FFA6A6A6"
+                android:text="@string/AutoConnect"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+
+	</RelativeLayout>
+
+
+</LinearLayout>

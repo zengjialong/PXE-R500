@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:mhsb_seekbar="http://schemas.android.com/apk/res-auto"
+	android:layout_width="@dimen/dialog_width"
+	android:layout_height="250dp"
+	android:layout_gravity="center"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="@dimen/dialog_width"
+		android:layout_height="250dp"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/space_30"
+			android:layout_gravity="center"
+			android:background="@drawable/chs_ly_aux_input_top_bg"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/id_txt_output_delay_val"
+				android:layout_width="120dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_weight="0.5"
+				android:text="@string/SetDelaySetting"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:textSize="15sp" />
+
+			<Button
+				android:id="@+id/id_btn_exit"
+				android:layout_width="@dimen/space_30"
+				android:layout_height="@dimen/space_30"
+				android:layout_marginRight="@dimen/space_5"
+				android:background="@drawable/chs_dialog_exit" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:background="@drawable/chs_ly_aux_input_img_normal"
+			android:layout_gravity="center">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginTop="15dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+
+
+				<TextView
+					android:id="@+id/id_txt_output_val_name"
+					android:layout_width="120dp"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:text="CH1"
+					android:textColor="@color/white"
+					android:textSize="@dimen/space_12" />
+
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:layout_weight="0.5"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/id_txt_output_delay_ms"
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+					android:gravity="center"
+					android:text="20"
+					android:textAllCaps="false"
+					android:textColor="@color/white" />
+
+
+				<TextView
+					android:id="@+id/id_txt_output_delay_cm"
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+					android:gravity="center"
+					android:text="20"
+					android:textAllCaps="false"
+					android:textColor="@color/white"
+					/>
+				<TextView
+					android:id="@+id/id_txt_output_delay_inch"
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+					android:gravity="center"
+					android:text="20"
+					android:textAllCaps="false"
+					android:textColor="@color/white"
+					/>
+
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_gravity="center"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<com.chs.mt.pxe_r500.tools.LongCickButton
+						android:id="@+id/id_btn_output_delay_sub"
+						android:layout_width="@dimen/space_30"
+						android:layout_height="@dimen/space_30"
+						android:layout_gravity="center"
+						android:background="@drawable/chs_btn_sub_selector"
+						android:gravity="center"
+						android:maxLines="1"
+						android:scaleType="fitCenter"
+						android:textAllCaps="false"
+						android:textColor="@color/text_color_main_valume" />
+
+					<com.chs.mt.pxe_r500.tools.MHS_SeekBar
+						android:id="@+id/id_setdelay_dialog_seekbar"
+						android:layout_width="match_parent"
+						android:layout_height="60dp"
+						android:layout_gravity="center"
+						android:layout_marginLeft="5dp"
+						android:layout_marginRight="5dp"
+						android:layout_weight="0.5"
+						android:gravity="center"
+						android:thumb="@drawable/chs_thumb_normal"
+						mhsb_seekbar:mhs_progress_background_color="@color/delay_seekbar_background_color"
+						mhsb_seekbar:mhs_progress_color="@color/mcl_seekbar_progress_color"
+						mhsb_seekbar:mhs_progress_max="30"
+						mhsb_seekbar:mhs_progress_width="3dp" />
+
+					<com.chs.mt.pxe_r500.tools.LongCickButton
+						android:id="@+id/id_btn_output_delay_inc"
+						android:layout_width="@dimen/space_30"
+						android:layout_height="@dimen/space_30"
+						android:layout_gravity="center"
+						android:background="@drawable/chs_btn_inc_selector"
+						android:gravity="center"
+						android:maxLines="1"
+						android:scaleType="fitCenter"
+						android:textAllCaps="false"
+						android:textColor="@color/text_color_main_valume" />
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>
+

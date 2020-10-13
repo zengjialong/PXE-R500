@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/id_dialog_share_singlemac_file"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:gravity="center"
+
+	android:background="@drawable/chs_ly_aux_input_top_bg"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="@dimen/dialog_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:background="@drawable/chs_ly_aux_input_top_bg"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/space_40"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/id_text_msg"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/space_40"
+				android:text="@string/sound_operation"
+				android:textColor="@color/color_dialogText"
+				android:textAllCaps="false"
+				android:textSize="15sp"
+				android:layout_marginLeft="@dimen/space_10"
+				android:gravity="center_vertical"/>
+
+			<ImageView
+				android:id="@+id/id_chs_dialog_exit"
+				android:layout_width="@dimen/space_30"
+				android:layout_height="@dimen/space_30"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/chs_dialog_exit"
+				android:textAllCaps="false"
+				android:textSize="15sp"/>
+
+		</RelativeLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:background="@drawable/chs_ly_aux_input_img_normal"
+			android:orientation="vertical">
+
+
+		<Button
+			android:id="@+id/id_chs_dialog_btn1"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/space_70"
+			android:background="@null"
+			android:text="@string/recall"
+			android:textColor="@color/white"
+			android:layout_centerInParent="true"
+			android:textAllCaps="false"
+			android:textSize="15sp"
+			/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginRight="11dp"
+			android:layout_marginLeft="11dp"
+			android:background="@color/dialog_midline_color"
+			/>
+
+		<Button
+			android:id="@+id/id_chs_dialog_btn0"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/space_70"
+			android:background="@null"
+			android:text="@string/save"
+			android:textColor="@color/white"
+			android:layout_centerInParent="true"
+			android:textAllCaps="false"
+			android:textSize="15sp"
+			/>
+
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginRight="11dp"
+			android:layout_marginLeft="11dp"
+			android:background="@color/dialog_midline_color"
+			/>
+		<Button
+			android:id="@+id/id_chs_dialog_btn2"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/space_70"
+			android:background="@null"
+			android:text="@string/DialogDel"
+			android:textColor="@color/white"
+			android:layout_centerInParent="true"
+			android:textAllCaps="false"
+			android:textSize="15sp"
+			/>
+
+		<Button
+			android:id="@+id/id_chs_dialog_btn3"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:background="@null"
+			android:visibility="gone"
+			android:text="Save"
+			android:textColor="@color/color_dialogItemTextNormal"
+			android:layout_centerInParent="true"
+			android:textAllCaps="false"
+			android:textSize="15sp"
+			/>
+		<Button
+			android:id="@+id/id_chs_dialog_btn4"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:visibility="gone"
+			android:background="@null"
+			android:textColor="@color/color_dialogItemTextNormal"
+			android:layout_centerInParent="true"
+			android:textAllCaps="false"
+			android:textSize="15sp"
+			/>
+	</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   >
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"
+		>
+
+		<LinearLayout
+			android:id="@+id/main_dialog_layout"
+			android:layout_width="@dimen/space_170"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:background="@drawable/chs_pop_menu_bg" >
+
+			<LinearLayout
+				android:id="@+id/ly_item2"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/menu_item_height"
+				android:layout_gravity="center_vertical"
+				android:visibility="gone"
+				android:orientation="horizontal"
+				>
+
+				<ImageView
+					android:id="@+id/imageView6"
+					android:layout_width="@dimen/menu_item_img_size"
+					android:layout_height="@dimen/menu_item_img_size"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="8dp"
+					android:src="@drawable/chs_menu_save" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:maxLines="1"
+					android:text="Menu_Save"
+					android:textColor="#ffffffff"
+					android:textSize="12sp" />
+			</LinearLayout>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginRight="11dp"
+				android:layout_marginLeft="11dp"
+				android:visibility="gone"
+				android:background="@color/dialog_midline_color"
+				/>
+			<LinearLayout
+				android:id="@+id/ly_item3"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/menu_item_height"
+				android:layout_gravity="center_vertical"
+				android:visibility="gone"
+				android:orientation="horizontal"
+				>
+
+				<ImageView
+					android:id="@+id/imageView2"
+					android:layout_width="@dimen/menu_item_img_size"
+					android:layout_height="@dimen/menu_item_img_size"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="8dp"
+					android:src="@drawable/chs_menu_loadfile" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:maxLines="1"
+					android:text="@string/Menu_Open"
+					android:textColor="#ffffffff"
+					android:textSize="12sp" />
+			</LinearLayout>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginRight="11dp"
+				android:layout_marginLeft="11dp"
+				android:visibility="gone"
+				android:background="@color/dialog_midline_color"
+				/>
+			<LinearLayout
+				android:id="@+id/ly_item5"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/menu_item_height"
+				android:visibility="gone"
+				android:layout_gravity="center_vertical"
+				android:orientation="horizontal"
+				>
+
+				<ImageView
+					android:id="@+id/imageView4"
+					android:layout_width="@dimen/menu_item_img_size"
+					android:layout_height="@dimen/menu_item_img_size"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="8dp"
+					android:src="@drawable/chs_menu_recover" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:maxLines="1"
+					android:text="OneKeyRecover"
+					android:textColor="#ffffffff"
+					android:textSize="12sp" />
+			</LinearLayout>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_marginRight="11dp"
+				android:layout_marginLeft="11dp"
+				android:visibility="gone"
+				android:background="@color/dialog_midline_color"
+				/>
+			<LinearLayout
+				android:id="@+id/ly_item4"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/menu_item_height"
+				android:layout_gravity="center_vertical"
+				android:orientation="horizontal"
+				>
+
+				<ImageView
+					android:id="@+id/imageView3"
+					android:layout_width="@dimen/menu_item_img_size"
+					android:layout_height="@dimen/menu_item_img_size"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="8dp"
+					android:src="@drawable/chs_menu_about" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:layout_gravity="center_vertical"
+					android:maxLines="1"
+					android:text="@string/About"
+					android:textColor="#ffffffff"
+					android:textSize="12sp" />
+			</LinearLayout>
+
+
+
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

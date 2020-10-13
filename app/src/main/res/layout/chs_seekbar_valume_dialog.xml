@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mhsb_seekbar="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/id_llyout_valume_dialog_seekbar"
+	android:layout_width="300dp"
+	android:layout_height="200dp"
+	android:background="@color/color_dialog"
+	android:orientation="vertical"> 
+	<com.chs.mt.pxe_r500.tools.MHS_Num_SeekBar
+       	android:id="@+id/id_valume_dialog_seekbar"  
+       	android:layout_width="wrap_content"
+       	android:layout_height="100dp"
+       	android:layout_marginLeft="20dp"
+       	android:layout_marginTop="5dp"
+       	mhsb_seekbar:mhs_numtext_size="12sp"
+       	mhsb_seekbar:mhs_numtext_color="#FFffffff"
+       	android:thumb="@drawable/chs_seekbar_thumb"
+        mhsb_seekbar:mhs_progress_background_color="@color/delay_seekbar_background_color"
+	    mhsb_seekbar:mhs_progress_color="@color/delay_seekbar_progress_color"
+
+       	>
+   	</com.chs.mt.pxe_r500.tools.MHS_Num_SeekBar>
+   	
+	<Button
+   		android:id="@+id/id_valume_dialog_button"
+    	android:layout_width="100dp"
+    	android:layout_height="40dp"
+    	android:layout_gravity="center"
+		android:layout_marginTop="20dp"
+		android:textAllCaps="false"
+		android:text="@string/Sure"
+		android:textSize="13sp"
+		android:gravity="center">
+	</Button>
+	<TextView        
+        android:id="@+id/id_text_db"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+       />
+</LinearLayout>

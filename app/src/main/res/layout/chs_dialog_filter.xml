@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/id_dialog_share_singlemac_file"
+	android:layout_width="250dp"
+	android:layout_height="250dp"
+	android:layout_gravity="center" 
+	android:gravity="center"
+	android:background="@null"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="250dp"
+		android:layout_height="250dp"
+		android:background="@drawable/chs_layoutc_filter_bg"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_text_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="20Hz"
+				android:textColor="@color/color_dialogText"
+                android:layout_centerInParent="true"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+			<Button
+				android:id="@+id/id_chs_dialog_exit"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginRight="5dp"
+				android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+				android:background="@drawable/chs_dialog_exit"
+				android:textAllCaps="false"
+				android:textSize="13sp"/>
+
+		</RelativeLayout>
+
+
+		<com.chs.mt.pxe_r500.tools.QNumberPicker
+            android:id="@+id/id_NumberPicker"
+			android:layout_gravity="center"
+			android:gravity="center"
+            android:layout_marginTop="20dp"
+			android:layout_width="200dp"
+			android:layout_height="150dp"
+			android:background="@drawable/chs_picker_bg"
+            android:descendantFocusability="blocksDescendants"
+            />
+
+	</LinearLayout>
+
+</LinearLayout>

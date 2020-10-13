@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/id_weight_srollview"
+        android:layout_width="@dimen/space_120"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/space_1"
+        android:paddingRight="@dimen/space_1"
+        android:paddingBottom="@dimen/space_1"
+        android:background="@drawable/chs_ly_aux_input_top_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="0%"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="30%"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="50%"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="80%"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="100%"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

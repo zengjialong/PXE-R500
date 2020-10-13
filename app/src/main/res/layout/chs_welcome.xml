@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/id_rlyout_welcome"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chs_welcome"
+    >
+
+	<ImageView
+        android:id="@+id/id_iv"
+		android:layout_centerInParent="true"
+		android:layout_width="512dp"
+		android:layout_height="300dp"
+		android:visibility="gone"
+		android:background="@drawable/chs_welcome_logo"
+		/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/id_llyout_about_dialog"
+	android:layout_width="@dimen/dialog_width"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_gravity="center"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:layout_width="@dimen/dialog_width"
+		android:layout_height="@dimen/space_30"
+		android:background="@drawable/chs_ly_aux_input_top_bg"
+		android:orientation="vertical">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/space_30"
+			android:layout_gravity="center"
+			android:layout_marginLeft="@dimen/space_10"
+			android:gravity="center_vertical"
+			android:textColor="@color/white"
+			android:text="@string/dialog_title_Prompt"
+			android:textSize="15sp" />
+
+		<ImageView
+			android:id="@+id/id_setdelay_dialog_button"
+			android:layout_width="@dimen/space_30"
+			android:layout_height="@dimen/space_30"
+			android:layout_gravity="center"
+			android:layout_marginRight="5dp"
+			android:layout_alignParentRight="true"
+			android:src="@drawable/chs_dialog_exit"
+			android:gravity="center"
+			android:textAllCaps="false"
+			android:visibility="gone"
+			android:textSize="13sp" />
+
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="@dimen/dialog_width"
+		android:layout_height="@dimen/space_120"
+		android:background="@drawable/chs_ly_aux_input_img_normal"
+		android:layout_gravity="center"
+		android:gravity="center"
+        android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/id_tv_msg"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginTop="20dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:text="@string/Opt_Channel_Set"
+			android:textSize="16sp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+
+            android:layout_marginTop="20dp"
+			android:layout_marginBottom="10dp"
+			android:orientation="horizontal">
+<!-- -->
+
+
+<!--			<Button-->
+<!--				android:id="@+id/id_b_exit"-->
+<!--				android:layout_width="70dp"-->
+<!--				android:layout_height="@dimen/space_30"-->
+<!--				android:layout_gravity="center"-->
+<!--				android:layout_marginLeft="@dimen/space_10"-->
+<!--				android:background="@drawable/chs_dialog_btn_normal"-->
+<!--				android:scaleType="fitXY"-->
+<!--				android:text="@string/cancel"-->
+<!--				android:textAllCaps="false"-->
+<!--				android:textColor="@color/white"-->
+<!--				android:textSize="13sp" />-->
+
+			<Button
+				android:id="@+id/id_b_exit"
+				android:layout_width="70dp"
+				android:layout_height="@dimen/space_30"
+				android:layout_gravity="center"
+				android:scaleType="fitXY"
+
+				android:layout_marginLeft="@dimen/space_10"
+				android:background="@drawable/chs_dialog_btn_normal"
+				android:text="@string/cancel"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:textSize="13sp"
+				/>
+
+
+			<Button
+				android:id="@+id/id_b_save"
+				android:layout_width="70dp"
+				android:layout_height="@dimen/space_30"
+				android:layout_gravity="center"
+				android:scaleType="fitXY"
+
+				android:layout_marginLeft="@dimen/space_10"
+				android:background="@drawable/chs_dialog_btn_normal"
+				android:text="@string/Emptied"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:textSize="13sp"
+				/>
+
+
+			<Button
+				android:id="@+id/id_b_cancel"
+				android:layout_width="70dp"
+				android:layout_height="@dimen/space_30"
+				android:layout_gravity="center"
+				android:layout_marginRight="@dimen/space_10"
+				android:layout_marginLeft="@dimen/space_10"
+				android:scaleType="fitXY"
+				android:background="@drawable/chs_dialog_btn_normal"
+				android:text="@string/Default"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:textSize="13sp"
+				/>
+
+
+
+		</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

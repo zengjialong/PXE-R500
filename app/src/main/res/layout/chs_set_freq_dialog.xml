@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:mhsb_seekbar="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/id_llyout_freq_dialog_seekbar"
+	android:layout_width="@dimen/dialog_width"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="@dimen/dialog_width"
+		android:layout_height="wrap_content"
+		android:background="@drawable/chs_ly_aux_input_top_bg"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/space_30"
+			android:layout_weight="1"
+
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/id_text_msg"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/space_30"
+				android:text="20Hz"
+				android:textColor="@color/color_dialogText"
+				android:textAllCaps="false"
+				android:textSize="15sp"
+				android:layout_marginLeft="@dimen/space_10"
+				android:gravity="center"/>
+
+			<ImageView
+				android:id="@+id/id_chs_dialog_exit"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginRight="5dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/chs_dialog_exit"
+				android:textAllCaps="false"
+				android:textSize="13sp"/>
+
+		</RelativeLayout>
+		<LinearLayout
+			android:layout_width="@dimen/dialog_width"
+			android:layout_height="match_parent"
+			android:background="@drawable/chs_ly_aux_input_img_normal"
+
+			android:orientation="vertical">
+		<TextView
+			android:id="@+id/id_text_freq"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:text="20Hz"
+			android:layout_marginTop="@dimen/space_10"
+			android:textColor="@color/color_dialogText"
+			android:textAllCaps="false"
+			android:textSize="@dimen/space_12"
+			android:gravity="center"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:orientation="horizontal">
+
+			<com.chs.mt.pxe_r500.tools.LongCickButton
+				android:id="@+id/id_b_freq_dialog_sub"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:background="@drawable/chs_output_valume_sub"
+				android:scaleType="fitCenter"
+				android:textAllCaps="false" />
+			<com.chs.mt.pxe_r500.tools.MHS_Num_SeekBar
+				android:id="@+id/id_freq_dialog_seekbar"
+				android:layout_weight = "1"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/space_50"
+				android:layout_gravity="center_vertical"
+				mhsb_seekbar:mhs_numtext_size="10sp"
+				mhsb_seekbar:mhs_numtext_color="#FFffffff"
+				android:thumb="@drawable/chs_seekbar_thumb"
+				mhsb_seekbar:mhs_progress_width="3dp"
+				mhsb_seekbar:mhs_progress_background_color="@color/delay_seekbar_background_color"
+				mhsb_seekbar:mhs_progress_color="@color/delay_seekbar_progress_color"
+				/>
+			<com.chs.mt.pxe_r500.tools.LongCickButton
+				style="?android:attr/buttonBarButtonStyle"
+				android:id="@+id/id_b_freq_dialog_inc"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@drawable/chs_output_valume_inc"
+				android:scaleType="fitCenter" />
+		</LinearLayout>
+		<Button
+			android:id="@+id/id_btn_sure"
+			android:layout_width="80dp"
+			android:layout_height="@dimen/space_30"
+			android:text="@string/Sure"
+			android:visibility="gone"
+			android:layout_marginTop="@dimen/space_10"
+			android:layout_marginBottom="@dimen/space_10"
+			android:background="@drawable/chs_dialog_selector"
+			android:textColor="@color/white"
+			android:textAllCaps="false"
+			android:layout_gravity="center"
+			/>
+
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/chs_ic_action_search_t" android:state_enabled="true" android:state_pressed="false"></item>
+    <item android:drawable="@drawable/chs_ic_action_search" android:state_enabled="true" android:state_pressed="true"></item>
+
+</selector>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/id_llyout_dialog_set_encryption"
+	android:layout_width="@dimen/dialog_width"
+	android:layout_height="150dp"
+	android:layout_gravity="center"
+
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="@dimen/dialog_width"
+		android:layout_height="150dp"
+		android:layout_gravity="center"
+		android:orientation="vertical">
+
+		<RelativeLayout
+
+			android:layout_width="@dimen/dialog_width"
+			android:layout_height="@dimen/space_30"
+			android:layout_gravity="center"
+			android:background="@drawable/chs_ly_aux_input_top_bg"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/id_b_set_title"
+				android:layout_width="wrap_content"
+				android:layout_height="30dp"
+				android:layout_marginLeft="@dimen/space_10"
+				android:gravity="center_vertical"
+				android:maxLines="1"
+				android:text="@string/Encryption"
+				android:textColor="@color/text_color_white"
+				android:textSize="15sp" />
+			<ImageView
+				android:id="@+id/id_btn_exit"
+				android:layout_width="@dimen/space_30"
+				android:layout_height="@dimen/space_30"
+				android:layout_marginRight="@dimen/space_5"
+				android:layout_alignParentRight="true"
+				android:visibility="gone"
+				android:src="@drawable/chs_dialog_exit" />
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="@dimen/dialog_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:background="@drawable/chs_ly_aux_input_img_normal"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:id="@+id/id_llyout_set_encryption"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginTop="@dimen/space_10"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/id_b_tv_set_encryption"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/space_30"
+					android:layout_gravity="center"
+					android:layout_marginLeft="@dimen/space_20"
+					android:layout_marginRight="@dimen/space_10"
+					android:gravity="center"
+					android:maxLines="1"
+					android:text="@string/Register_SPassword"
+					android:textColor="@color/text_color_white"
+					android:textSize="15sp" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1"
+					android:orientation="horizontal">
+				<EditText
+					android:id="@+id/id_et_set_encryption"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/space_30"
+					android:layout_gravity="center"
+
+					android:layout_marginRight="@dimen/space_20"
+					android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+					android:gravity="center"
+					android:background="@drawable/edit_background"
+					android:inputType="textPassword"
+                    android:textCursorDrawable="@drawable/color_cursor"
+					android:imeOptions="normal"
+					android:maxLength="6"
+					android:maxLines="1"
+					android:textColor="@color/dialog_text_normal_color"
+					android:textSize="12sp" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/id_llyout_encryption"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/space_30"
+				android:layout_marginTop="20dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_marginRight="@dimen/space_10"
+				android:orientation="horizontal">
+				<View
+					android:layout_weight="1"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:background="@null"
+					/>
+				<Button
+					android:id="@+id/id_b_encryption_cancle"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_width="70dp"
+					android:layout_height="@dimen/space_30"
+					android:background="@drawable/chs_dialog_btn_normal"
+					android:text="@string/cancel"
+					android:textAllCaps="false"
+					android:textColor="@color/text_color_white"
+					android:textSize="13sp" />
+
+
+
+				<Button
+					android:id="@+id/id_b_encryption_ok"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_width="70dp"
+					android:layout_height="@dimen/space_30"
+					android:layout_marginLeft="@dimen/space_10"
+					android:background="@drawable/chs_dialog_btn_normal"
+					android:text="@string/Sure"
+					android:textAllCaps="false"
+					android:textColor="@color/text_color_white"
+					android:textSize="13sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

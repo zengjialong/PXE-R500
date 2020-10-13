@@ -1,0 +1,3090 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<com.chs.mt.pxe_r500.tools.MHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:eq_seekbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_llyout_equalizer_hsrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:fillViewport="true"
+	android:overScrollMode="never"
+	android:scrollbars="none"
+	android:fadingEdge="none"
+    android:orientation="horizontal">  
+    <LinearLayout
+        android:id="@+id/id_llyout_equalizer_all"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+		android:fillViewport="true" 
+        android:orientation="horizontal">
+        
+	    <LinearLayout
+	        android:id="@+id/id_llyout_equalizer_one_1"  
+	        android:layout_width="@dimen/eq_page_item_ly_width"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="vertical">
+	        
+	        <Button
+				android:id="@+id/id_tv_id_equalizer_one_1"
+				android:layout_weight="1"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"				
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false" 
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" /> 
+
+				
+	  		<Button
+				android:id="@+id/id_tv_freq_equalizer_one_1"
+				android:layout_weight="1"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"		
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+	  		<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+	        	android:id="@+id/id_mvs_equalizer_one_1"  
+	        	android:layout_weight="8"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"		
+	        	android:layout_gravity="center"
+				android:gravity="center"
+	        	android:thumb="@drawable/chs_mvs_seekbar_thumb"
+	        	eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"	
+	       	 	eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+	       	 	eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+	       	 	eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+	       	 	>
+	    	</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_1"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_1"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+		        android:id="@+id/id_ly_reset_eqg_one_1"
+				android:layout_weight="1.55"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"		
+		        android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:orientation="horizontal">
+		  		<Button
+					android:id="@+id/id_tv_reset_eqg_one_1"
+			        android:layout_width="@dimen/equalizer_reset_width"
+			        android:layout_height="@dimen/equalizer_reset_height"	
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					 />
+	  		</LinearLayout>
+			<TextView 
+			    android:layout_weight="0.5"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+			    />
+	    </LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_2"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_2"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_2"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_2"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_2"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_2"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_2"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_2"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_3"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_3"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_3"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_3"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_3"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_3"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_3"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_3"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_4"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_4"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_4"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_4"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_4"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_4"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_4"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_4"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_5"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_5"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_5"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_5"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_5"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_5"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_5"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_5"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_6"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_6"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_6"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_6"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_6"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_6"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_6"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_6"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_7"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_7"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_7"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_7"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_7"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_7"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_7"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_7"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_8"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_8"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_8"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_8"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_8"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_8"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_8"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_8"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_9"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_9"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_9"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_9"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_9"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_9"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_9"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_9"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_10"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_10"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_10"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_10"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_10"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_10"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_10"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_10"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_11"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_11"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_11"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_11"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_11"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_11"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_11"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_11"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_12"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_12"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_12"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_12"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_12"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_12"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_12"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_12"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_13"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_13"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_13"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_13"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_13"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_13"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_13"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_13"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_14"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_14"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_14"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_14"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_14"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_14"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_14"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_14"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_15"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_15"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_15"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_15"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_15"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_15"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_15"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_15"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_16"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_16"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_16"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_16"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_16"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_16"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_16"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_16"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_17"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_17"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_17"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_17"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_17"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_17"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_17"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_17"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_18"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_18"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_18"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_18"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_18"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_18"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_18"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_18"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_19"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_19"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_19"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_19"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_19"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_19"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_19"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_19"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_20"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_20"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_20"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_20"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_20"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_20"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_20"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_20"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_21"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_21"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_21"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_21"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_21"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_21"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_21"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_21"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_22"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_22"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_22"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_22"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_22"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_22"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_22"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_22"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_23"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_23"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_23"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_23"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_23"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_23"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_23"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_23"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_24"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_24"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_24"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_24"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_24"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_24"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_24"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_24"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_25"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_25"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_25"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_25"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_25"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_25"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_25"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_25"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_26"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_26"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_26"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_26"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_26"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_26"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_26"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_26"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_27"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_27"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_27"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_27"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_27"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_27"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_27"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_27"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_28"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_28"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_28"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_28"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_28"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_28"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_28"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_28"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_29"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_29"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_29"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_29"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_29"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_29"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_29"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_29"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_30"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_30"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_30"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_30"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_30"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_30"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_30"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_30"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/id_llyout_equalizer_one_31"
+			android:layout_width="@dimen/eq_page_item_ly_width"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<Button
+				android:id="@+id/id_tv_id_equalizer_one_31"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:maxLines="1"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:visibility="gone"
+				android:textColor="@color/eq_page_eqnum_color"
+				android:textSize="@dimen/eq_page_eqnum_text_size" />
+
+
+			<Button
+				android:id="@+id/id_tv_freq_equalizer_one_31"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_freq_color"
+				android:textSize="@dimen/eq_page_freq_text_size" />
+			<com.chs.mt.pxe_r500.tools.EQ_SeekBar
+				android:id="@+id/id_mvs_equalizer_one_31"
+				android:layout_weight="8"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:thumb="@drawable/chs_mvs_seekbar_thumb"
+				eq_seekbar:eq_progress_width="@dimen/equalizer_eq_progress_width"
+				eq_seekbar:eq_progress_bar_round="@dimen/equalizer_eq_progress_bar_round"
+				eq_seekbar:eq_progress_background_color="@color/equalizer_eq_progress_background_color"
+				eq_seekbar:eq_progress_color="@color/equalizer_eq_progress_color"
+				>
+			</com.chs.mt.pxe_r500.tools.EQ_SeekBar>
+
+			<Button
+				android:id="@+id/id_tv_gain_equalizer_one_31"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_gain_color"
+				android:textSize="@dimen/eq_page_gain_text_size" />
+
+			<Button
+				android:id="@+id/id_tv_q_equalizer_one_31"
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:maxLines="1"
+				android:gravity="center"
+				android:textAllCaps="false"
+				android:background="@null"
+				android:textColor="@color/eq_page_q_color"
+				android:textSize="@dimen/eq_page_q_text_size" />
+
+			<LinearLayout
+				android:id="@+id/id_ly_reset_eqg_one_31"
+				android:layout_weight="1.55"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/id_tv_reset_eqg_one_31"
+					android:layout_width="@dimen/equalizer_reset_width"
+					android:layout_height="@dimen/equalizer_reset_height"
+					android:maxLines="1"
+					android:gravity="center"
+					android:clickable="false"
+					android:background="@drawable/chs_eq_resetg_normal"
+					/>
+			</LinearLayout>
+			<TextView
+				android:layout_weight="0.5"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				/>
+		</LinearLayout>
+
+
+
+
+
+
+
+
+
+	</LinearLayout>
+</com.chs.mt.pxe_r500.tools.MHorizontalScrollView>

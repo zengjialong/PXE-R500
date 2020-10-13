@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:KNOB="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" 
+	android:gravity="center" 
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_b_0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/chs_btn_slope_selector"
+            android:scaleType="fitXY"
+            android:text="6dB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/output_name_text_size"/>
+
+        <Button
+            android:id="@+id/id_b_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/chs_btn_slope_selector"
+            android:scaleType="fitXY"
+            android:text="12dB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/output_name_text_size"/>
+
+        <Button
+            android:id="@+id/id_b_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/chs_btn_slope_selector"
+            android:scaleType="fitXY"
+            android:text="18dB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/output_name_text_size"/>
+
+        <Button
+            android:id="@+id/id_b_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/chs_btn_slope_selector"
+            android:scaleType="fitXY"
+            android:text="24dB"
+            android:textColor="@color/white"
+            android:textSize="@dimen/output_name_text_size"/>
+	</LinearLayout>
+</RelativeLayout>

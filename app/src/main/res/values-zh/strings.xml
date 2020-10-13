@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+
+    <!--通用-->
+    <string name="cancel">取消</string>
+    <string name="Sure">确定</string>
+    <string name="dialog_title_Prompt">提示</string>
+
+    <!--    免责申明-->
+    <string name="Statement">免责声明</string>
+    <string name="StatementCON">请勿在驾驶过程中操作本应用或任何手持设备。本应用并不适合在驾驶过程中使用，仅限在车辆停止时使用。请始终遵守所有交通法律。</string>
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
+
+
+    <!--    主页-->
+    <string name="SetDelay">延时</string>
+    <string name="Output">通道</string>
+    <string name="Home">主页</string>
+    <string name="EQ">EQ</string>
+    <string name="Weight">合频</string>
+    <string name="Ad_InputSourceMain">主音源</string>
+    <string name="Main_inputsource_select">主音源选择</string>
+    <string name="Hi_Level">高电平</string>
+    <string name="Bluetooth">蓝牙</string>
+    <string name="AUX">低电平</string>
+    <string name="source_superposition">辅助音源</string>
+    <string name="source_superposition_title">辅助音源选择</string>
+    <string name="inputsource_decrement">主音源衰减量</string>
+    <string name="OFF">关闭</string>
+    <string name="All_volume">总音量</string>
+    <string name="Technicians">专业用户</string>
+    <string name="common_user">一般用户</string>
+    <string name="Sound_EFF1">预置1</string>
+    <string name="Sound_EFF2">预置2</string>
+    <string name="Sound_EFF3">预置3</string>
+    <string name="Sound_EFF4">预置4</string>
+    <string name="Sound_EFF5">预置5</string>
+    <string name="Sound_EFF6">预置6</string>
+    <string name="Sound_EFF">预置</string>
+    <!--菜单栏-->
+    <string name="Encryption">加密</string>
+    <string name="Register_SPassword">密码</string>
+    <string name="Encrying_data">数据已加密</string>
+    <string name="Deciphering">解密</string>
+    <string name="EncryptionClean">清空数据</string>
+    <string name="off_delay_time">关机延时</string>
+    <string name="SSM_ShareOpt">分享音效</string>
+    <string name="SSM_ShareMacMSG">请选择分享单组/整机音效？</string>
+    <string name="SSM_Single">单组</string>
+    <string name="SSM_Machine">整机</string>
+    <string name="SSM_ShareMacTxt">*分享整机音效时间会较长</string>
+    <string name="SSM_Save">保存音效</string>
+    <string name="SSM_FileName">文件名称</string>
+    <string name="SSM_Detial">备注</string>
+    <string name="SSM_SaveMacMSG">*保存整机音效时间会较长</string>
+    <string name="Menu_Open">本地音效</string>
+    <string name="down_title_name">所有</string>
+    <string name="seffitem_love">喜欢</string>
+    <string name="down_title_Recently">最近</string>
+    <string name="seffitem_reorder">排序</string>
+    <string name="About">关于</string>
+    <string name="app_name">PXE-R500</string>
+    <string name="Software_version">软件版本：</string>
+    <string name="device_version">设备版本：</string>
+
+    <!--通道-->
+    <string name="XOver">分频器</string>
+    <string name="HighPass">高通</string>
+    <string name="H_P_F_Type">高通-类型</string>
+    <string name="FilterLR">宁克-锐</string>
+    <string name="FilterBW">巴特沃斯</string>
+    <string name="FilterB">贝塞尔</string>
+    <string name="H_P_F_Freq">高通-频率</string>
+    <string name="H_P_F_Slope">高通-斜率</string>
+
+    <string name="Otc6dB">6dB/Oct</string>
+    <string name="Otc12dB">12dB/Oct</string>
+    <string name="Otc18dB">18dB/Oct</string>
+    <string name="Otc24dB">24dB/Oct</string>
+    <string name="Otc30dB">30dB/Oct</string>
+    <string name="Otc36dB">36dB/Oct</string>
+    <string name="Otc42dB">42dB/Oct</string>
+    <string name="Otc48dB">48dB/Oct</string>
+
+    <string name="LowPass">低通</string>
+    <string name="L_P_F_Type">低通-类型</string>
+    <string name="L_P_F_Freq">低通-频率</string>
+    <string name="L_P_F_Slope">低通-斜率</string>
+    <string name="output_type">通道类型</string>
+    <string name="output_title_type">通道类型</string>
+    <string name="NULL">空</string>
+    <string name="setpreposition">前置</string>
+    <string name="FL_Tweeter">前左高频</string>
+    <string name="FL_Midrange">前左中频</string>
+    <string name="FL_M_WF">前左中低</string>
+    <string name="FL_Woofer">前左低频</string>
+    <string name="FL_Full">前左全频</string>
+    <string name="FR_Tweeter">前右高频</string>
+    <string name="FR_Midrange">前右中频</string>
+    <string name="FR_M_WF">前右中低</string>
+    <string name="FR_Woofer">前右低频</string>
+    <string name="FR_Full">前右全频</string>
+    <string name="setpostposition">后置</string>
+    <string name="RL_Tweeter">后左高频</string>
+    <string name="Input_type_26">后左中频</string>
+    <string name="RL_Center_Woofer">后左中低</string>
+    <string name="RL_Woofer">后左低频</string>
+    <string name="RL_Full">后左全频</string>
+    <string name="RR_Tweeter">后右高频</string>
+    <string name="Input_type_27">后右中频</string>
+    <string name="RR_Center_Woofer">后右中低</string>
+    <string name="RR_Woofer">后右低频</string>
+    <string name="RR_Full">后右全频</string>
+    <string name="Center">中置</string>
+    <string name="Front_Full_higt">前中置高频</string>
+    <string name="Front_Full">前中置中频</string>
+    <string name="C_Rear_Woofer">后中置高频</string>
+    <string name="RR_center">后中置中频</string>
+    <string name="Sub">超低</string>
+    <string name="L_Subweeter">左超低频</string>
+    <string name="R_Subweeter">右超低频</string>
+    <string name="Subweeter">超低频</string>
+    <string name="setrearout">环绕</string>
+    <string name="Input_type_28">左环绕</string>
+    <string name="Input_type_29">右环绕</string>
+    <string name="output_volume">通道音量（dB）</string>
+    <string name="output_polar">通道相位</string>
+    <string name="Polar_P">正相</string>
+    <string name="Polar_N">反相</string>
+    <string name="btn_Link">联调</string><!--联调按钮-->
+    <string name="title_Link">联调</string><!--联调弹窗标题-->
+    <string name="Opt_Channel_Link">请选择联调方式</string>
+    <string name="LeftToRight">EQ从左复制到右</string>
+    <string name="RightToLeft">EQ从右复制到左</string>
+    <string name="warning">警告</string>
+    <string name="NoLinkLR">没有左右通道可以联调！！</string>
+    <string name="Locked">锁定</string>
+    <string name="Opt_Channel_Locked">确定锁定输出配置？</string>
+    <string name="ISLock">所有输出配置为空，输出配置不能锁定。</string>
+    <string name="Opt_Channel_unlock">确定解除输出配置？</string>
+    <string name="Reset">重置</string>
+    <string name="Opt_Channel_Set">请选择输出配置清空或恢复默认</string>
+    <string name="Emptied">清空</string>
+    <string name="Default">默认</string>
+
+    <!--EQ-->
+    <string name="band">波段</string>
+    <string name="Frequency">频率</string>
+    <string name="Q">Q值</string>
+    <string name="dB">增益</string>
+    <string name="Work">直通</string>
+    <string name="Equalizer_ResetEQ">重置均衡</string>
+    <string name="ResetEQ">确定重置所有均衡？</string>
+    <string name="Bypass_EQ">直通均衡</string>
+    <string name="ByPassEQ">确定直通所有均衡？</string>
+    <string name="Restore_EQ">恢复均衡</string>
+    <string name="RecoverEQ">确定恢复所有均衡？</string>
+    <string name="PEQ_MODE">参量均衡</string>
+    <string name="PEQ_change_GEQ">确定参量均衡转为图示均衡？\n（所有设置将会丢失）</string>
+    <string name="GEQ_MODE">图示均衡</string>
+    <string name="GEQ_change_PEQ">确定图示均衡转为参量均衡？\n（所有设置将会丢失）</string>
+
+
+    <!--合频-->
+    <string name="Active_input">被动输入</string>
+    <string name="Passive_input">主动输入</string>
+    <string name="IN1">高电平1</string>
+    <string name="IN2">高电平2</string>
+    <string name="IN3">高电平3</string>
+    <string name="IN4">高电平4</string>
+    <string name="Mixer_AUX_1">低电平左</string>
+    <string name="Mixer_AUX_2">低电平右</string>
+    <string name="Mixer_IN15">蓝牙左</string>
+    <string name="Mixer_IN16">蓝牙右</string>
+
+    <!--延时界面 TCR-->
+    <string name="MS">毫秒</string>
+    <string name="CM">厘米</string>
+    <string name="Inch">英寸</string>
+    <string name="SetDelaySetting">延时设置</string>
+    <string name="DelayGroup">延时群组</string>
+    <string name="F_Sound">前声场</string>
+    <string name="R_Sound">后声场</string>
+    <string name="S_Sound">超低音</string>
+    <string name="A_Sound">全声场</string>
+    <string name="None_Sound">无</string>
+
+
+    <!--其他提示语-->
+    <string name="spp_le_select_device">选择一个设备连接</string>
+    <string name="LoadDSPSEff">PXE-R500 加载DSP音效</string>
+    <string name="scanning">搜索中&#8230;</string>
+    <string name="AutoConnect">自动连接</string>
+    <string name="spp_le_button_scan">扫描新蓝牙设备</string>
+    <string name="off_line_mode">离线模式</string>
+    <string name="six_pwd">请输入六位密码</string>
+    <string name="SSM_FileNameMsg">请输入文件名</string>
+    <string name="Save_success">保存成功 </string>
+    <string name="opt_User">确认是否使用当前音效？</string>
+    <string name="DialogDelMsg">确认是否删除选中文件？</string>
+
+
+
+
+
+
+    <!--未核对过的中英文-->
+    <string name="Mixer_HI_5">高电平5</string>
+    <string name="Mixer_HI_6">高电平6</string>
+    <string name="TriesToConnectTo">尝试连接</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="PasswordIncorrect">密码错误</string>
+    <string name="Upload_time">时间：</string>
+    <string name="SetFreq">设置频率</string>
+    <string name="SetEQ">设置Q值</string>
+    <string name="SetGain">设置增益</string>
+    <string name="ble_device_connecting">正在连接&#8230;</string>
+    <string name="output_volume_1">通道音量</string>
+    <string name="spp_le_Linking">正在连接&#8230;</string>
+    <string name="Loading">加载中&#8230;</string>
+    <string name="Saving">保存中&#8230;</string>
+    <string name="offline_link_bt">断开连接</string>
+    <string name="SynDataSucess">数据同步完成!</string>
+    <string name="device">设备版本</string>
+    <string name="apps">软件版本</string>
+    <string name="version_error">连接失败，版本号不匹配，请更新!</string>
+    <string name="LinkOfMsg">连接异常，退出连接！</string>
+
+    <string name="SSM_REC">接收到一個音效文件數據，已保存到列表中。</string>
+    <string name="SSM_Title">音效数据更新</string>
+    <string name="SSM_MSG">接收到一个音效文件数据，是否更新使用？</string>
+    <string name="RefusedUseBluetooth">用户拒绝使用蓝牙,无法使用本软件!</string>
+    <string name="quitLackPer">缺少主要权限, 无法运行!</string>
+    <string name="Again_exit">再按一次退出程序</string>
+    <string name="ULSE_SAMENAME">请输入另一个名字，本机已有此文件！</string>
+    <string name="second">秒</string>
+    <string name="sameName_Tis">已有相同的机器预置音效名!</string>
+    <string name="SetGroupName">请输入音效名称</string>
+    <string name="UpdateLocalFile">已更新本地数据!</string>
+    <string name="net_downed">本地音效</string>
+    <string name="delFailed">刪除失败!</string>
+    <string name="delSuccess">刪除成功!</string>
+    <string name="seffitem_haveSel">已选</string>
+    <string name="opt_UserMac">是否使用此文件，本操作将会覆盖本机所有数据!</string>
+    <string name="DialogDel">删除</string>
+    <string name="LoadSEff_Fail">更新当前音效失败！</string>
+    <string name="OtcOFF">OFF</string>
+    <string name="SEFF_WRONG_MAC">机型不匹配！</string>
+    <string name="FileError">请打开正确的音效文件!</string>
+    <string name="ShareError">分享错误!</string>
+    <string name="please_connect_msg">请在联机的情况下进行!</string>
+    <string name="Save_error">保存失败! </string>
+    <string name="chs_name">广州市车厘子电子科技有限公司</string>
+    <string name="chs_tel">020&#8211;87282169</string>
+    <string name="chs_contacts">Mr Qing</string>
+    <string name="chs_web">www.chschs.com</string>
+    <string name="chs_weixin">CHSAUDIO</string>
+    <string name="chs_qq">QQ123456</string>
+    <string name="chs_briefing_en">The company was founded in 2013, is a focus on car DSP audio research and development program integrated company.</string>
+    <string name="chs_briefing_zh">公司成立于2013年，是一家专注于车载DSP音频研究开发的方案集成型公司。</string>
+    <string name="chs_brand">CHS</string>
+    <string name="share_seff">分享当前音效</string>
+
+
+
+
+    <string name="recall">调用</string>
+    <string name="save">保存</string>
+    <string name="sound_operation">预置操作</string>
+    <string name="unlocked">已锁定</string>
+    <string name="opt_delete">本操作将会清除此组数据</string>
+    <string name="seffitem_apply">应用</string>
+    <string name="seffitem_share">分享</string>
+    <string name="delay_unit">延时单位</string>
+</resources>

@@ -1,0 +1,2426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_layout_delaysettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/main_color"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/chs_delaysettings_auto_bg"
+        app:layout_heightPercent="80%"
+        app:layout_marginBottomPercent="20%"
+        app:layout_widthPercent="75%"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/id_llyout_delay_speaker_lrc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:tag="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- 左高频  -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_1_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_1_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_1"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_1"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_selector"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 中置，低，全频  -->
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_27"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_19_2"
+                        android:layout_width="@dimen/space_40"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/id_delay_car_19_2"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_center_selector"
+                        android:gravity="center" />
+                </LinearLayout>
+                <!-- 中置高频  -->
+                <Space
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="match_parent" />
+                <!-- 中置右全频  -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_20_2"
+                        android:layout_width="@dimen/space_40"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/id_delay_car_20_2"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_center_all_selector"
+                        android:gravity="center" />
+                </LinearLayout>
+                \
+            </LinearLayout>
+            <!-- 右高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_7"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_7"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+
+                            android:background="@drawable/chs_speaker_high_right_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_7"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_7_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_7_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_7_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_llyout_delay_speaker_lrm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+
+            android:layout_gravity="center"
+
+            android:orientation="horizontal">
+            <!-- 左中频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_2_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_2_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+
+                        <Button
+                            android:id="@+id/id_delay_car_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_19"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/id_delay_car_19"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_center_selector"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_28"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_20"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/id_delay_car_20"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_center_all_selector"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 右中频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_8"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_8"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_8"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_8_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_8_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_8_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_llyout_delay_speaker_l"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="2">
+            <!-- 左高,中低，中高，全频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_2_4_5_6"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_3_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_3_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_3"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_3"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" />
+
+
+            <!-- 右高,中低，中高，全频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_8_10_11_12"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_9"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_9"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_9_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_9_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_9_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_llyout_delay_speaker_lr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="2"
+            android:visibility="gone">
+            <!-- 左高,中低，中高，全频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_3_4_5_6"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_4_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_4_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_4_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_4"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_4"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- 右高,中低，中高，全频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_9_10_11_12"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_10"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_10"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_10_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_10_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_10_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- 左高频  -->
+                <LinearLayout
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_5_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_5_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_5_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_5"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_5"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 中置，低，全频  -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" />
+            <!-- 右高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_11"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_11"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_11_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_11_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_11_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- 左高频  -->
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_1"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_6_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_6_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_6_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_6"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+
+                        <Button
+                            android:id="@+id/id_delay_car_6"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 中置，低，全频  -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7">
+
+            </View>
+            <!-- 右高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_12"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_12"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_12_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_12_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_12_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/space_160"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_ly_output_delay_27_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_27_2"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/id_delay_car_27_2"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_left_all_selector"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_ly_output_delay_27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_27"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/id_delay_car_27"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_left_all_selector"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3" />
+
+            <LinearLayout
+                android:layout_width="@dimen/space_160"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_ly_output_delay_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/id_delay_car_28"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_right_all_selector" />
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_28"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/id_delay_car_28_2"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:background="@drawable/chs_speaker_high_right_all_selector" />
+
+                <TextView
+                    android:id="@+id/id_txt_output_delay_28_2"
+                    android:layout_width="@dimen/space_32"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_llyout_delay_speaker_r_high"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="4">
+            <!-- 后置左高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_13"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_13_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_13_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_13_2"
+
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_13"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_13"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.7" />
+
+            <!-- 后置右高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_16"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_16"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_16"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_16_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_16_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_16_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="5">
+            <!-- 后置左低全频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_14_15"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_25_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_25_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+
+                        <Button
+                            android:id="@+id/id_delay_car_25_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_25"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_25"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/id_delay_car_21"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:background="@drawable/chs_speaker_high_right_center_all_right_selector"
+                    android:gravity="center" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/id_delay_car_29"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/chs_speaker_high_low_all_selector"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- 后置右低全频    -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_17_18"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/id_delay_car_26"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_right_all_selector"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_26"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/id_delay_car_26_2"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/chs_speaker_high_right_all_selector"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_26_2"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_13"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_txt_output_delay_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="20"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/id_txt_output_delay_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="20"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="4">
+            <!-- 后置左高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_14_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_14_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_14_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_14"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_14"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/id_delay_car_21_2"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:background="@drawable/chs_speaker_high_right_center_all_right_selector"
+                    android:gravity="center" />
+
+                <Space
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/id_delay_car_29_2"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/chs_speaker_high_low_all_selector"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- 后置右高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/id_delay_car_17"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_right_all_selector"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_17"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/id_delay_car_17_2"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_right_all_selector"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_17_2"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_13"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_txt_output_delay_21_2"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="20"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/id_txt_output_delay_29_2"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="20"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_llyout_delay_speaker_lr_low"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="3">
+            <!-- 左低频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_3"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_30_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_30_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+
+                        <Button
+                            android:id="@+id/id_delay_car_30_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_30"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_30"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" />
+            <!-- 右低频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_9"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_31"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_31"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_31_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/id_delay_car_31_2"
+                            android:layout_width="30dp"
+                            android:layout_height="@dimen/space_30"
+                            android:background="@drawable/chs_speaker_high_right_all_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_31_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/id_llyout_delay_speaker_r_low"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_25"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="4">
+            <!-- 后置左高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_llyout_speaker_26"
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_15_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_15_2"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_15_2"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_ly_output_delay_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_txt_output_delay_15"
+                            android:layout_width="@dimen/space_32"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/id_delay_car_15"
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/chs_speaker_high_left_all_selector"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <!-- 后置右高频  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/space_160"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/id_delay_car_18"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_right_all_selector"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_18"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+
+                    <Button
+                        android:id="@+id/id_delay_car_18_2"
+                        android:layout_width="@dimen/space_30"
+                        android:layout_height="@dimen/space_30"
+                        android:background="@drawable/chs_speaker_high_right_all_selector"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/id_txt_output_delay_18_2"
+                        android:layout_width="@dimen/space_32"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="20"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:tag="6">
+
+            <LinearLayout
+                android:layout_width="@dimen/space_40"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_delay_car_22"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/chs_speaker_high_low_all_left_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/id_txt_output_delay_22"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/space_40"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_delay_car_24"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/chs_speaker_high_low_all_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/id_txt_output_delay_24"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/space_40"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_delay_car_23"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/chs_speaker_high_low_all_right_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/id_txt_output_delay_23"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_llyout_delay_speaker_superlow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:tag="6">
+
+            <LinearLayout
+                android:id="@+id/id_llyout_speaker_22"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_delay_car_22_2"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/chs_speaker_high_low_all_left_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/id_txt_output_delay_22_2"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_llyout_speaker_24"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_delay_car_24_2"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/chs_speaker_high_low_all_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/id_txt_output_delay_24_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_llyout_speaker_23"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/id_delay_car_23_2"
+                    android:layout_width="@dimen/space_30"
+                    android:layout_height="@dimen/space_30"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/chs_speaker_high_low_all_right_selector"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/id_txt_output_delay_23_2"
+                    android:layout_width="@dimen/space_40"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+
+
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ly_delay_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40"
+                    android:background="@color/delay_select_bg"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/DelayGroup"
+                        android:textColor="@color/white"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="viewStart"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:textAllCaps="false"
+                        android:background="@color/transparent"
+                        android:textSize="@dimen/space_12"
+                        />
+                    <Button
+                        android:id="@+id/id_btn_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/F_Sound"
+                        android:background="@color/nullc"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+
+                        android:textAlignment="viewEnd"
+                        android:paddingRight="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_15"
+                        android:textSize="@dimen/space_12"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/space_10"
+                        android:layout_height="@dimen/space_10"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:src="@drawable/chs_delay_back"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/space_12"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 单位  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_40"
+                    android:background="@color/delay_select_bg"
+                    android:orientation="horizontal">
+                <Button
+                    android:layout_width="@dimen/space_80"
+                    android:layout_height="match_parent"
+                    android:text="@string/delay_unit"
+                    android:textAlignment="viewStart"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:textColor="@color/white"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="false"
+
+                    android:background="@color/transparent"
+                    android:textSize="@dimen/space_12"
+                    />
+                <Button
+                    android:id="@+id/id_b_ms1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:text="@string/MS"
+                    android:textAllCaps="false"
+                    android:textAlignment="viewEnd"
+                    android:paddingRight="@dimen/space_10"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+                    <ImageView
+                        android:layout_width="@dimen/space_10"
+                        android:layout_height="@dimen/space_10"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:src="@drawable/chs_delay_back"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/space_12"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_b_encryption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chs_btn_encryption"
+        android:text="@string/Encrying_data"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color_red"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+</android.support.percent.PercentRelativeLayout>

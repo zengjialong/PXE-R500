@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/musicbox_LrcPagePlay_Color_6" />
+    <corners android:radius="@dimen/Music_lrc_Bar_play_radiusSize"/>
+    <!--<stroke android:width="1dp" android:color="@color/user_group_set_btn_color_normal" />-->
+</shape>
