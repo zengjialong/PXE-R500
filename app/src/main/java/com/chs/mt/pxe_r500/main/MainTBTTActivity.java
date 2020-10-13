@@ -90,7 +90,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
-//只是添加了一个注释   表示当前的Activity为主页
+//这是第一次进来显示的界面
 public class MainTBTTActivity extends FragmentActivity {
     private static final String TAG = "MainTETActivity";
     private FragmentManager fragmentManager;

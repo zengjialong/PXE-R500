@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/chs/mt/pxe_r500/main/MainTBTTActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/chs/mt/pxe_r500/main/MainTBTTActivity.java	(revision 2dd8842f246401e9edffea6525c551c8689424a2)
++++ app/src/main/java/com/chs/mt/pxe_r500/main/MainTBTTActivity.java	(date 1602560040633)
+@@ -90,7 +90,7 @@
+ import java.util.Set;
+ import java.util.Timer;
+ import java.util.TimerTask;
+-//只是添加了一个注释   表示当前的Activity为主页
++
+ public class MainTBTTActivity extends FragmentActivity {
+     private static final String TAG = "MainTETActivity";
+     private FragmentManager fragmentManager;
