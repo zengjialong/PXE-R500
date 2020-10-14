@@ -33,7 +33,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-//
+//我这也算是一次提交吧
 public class DelayAuto_Fragment extends Fragment {
     private static final int SPK_MAX = 62;
     private Button delay_car[] = new Button[SPK_MAX];
